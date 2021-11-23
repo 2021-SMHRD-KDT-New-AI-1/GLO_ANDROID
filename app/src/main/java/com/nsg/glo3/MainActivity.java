@@ -53,7 +53,7 @@ public class MainActivity extends AppCompatActivity {
                 }
 
                 return true;
-                // return true로 해야 Fragment 같이 아이콘 바뀜
+
             }
         });
     }
