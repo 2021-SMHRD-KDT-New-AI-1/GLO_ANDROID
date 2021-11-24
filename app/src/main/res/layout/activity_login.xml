@@ -80,24 +80,25 @@
 
         </androidx.cardview.widget.CardView>
 
-            <RelativeLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
 
-                android:layout_alignTop="@+id/cv"
-                android:layout_alignRight="@+id/cv"
-                android:layout_alignBottom="@+id/cv"
-                android:layout_marginRight="-30dp"
-                android:elevation="10dp">
+            android:layout_alignTop="@+id/cv"
+            android:layout_alignRight="@+id/cv"
+            android:layout_alignBottom="@+id/cv"
+            android:layout_marginRight="-30dp"
+            android:elevation="10dp">
 
-                <ImageButton
-                    android:id="@+id/btLogin"
-                    android:layout_width="60dp"
-                    android:layout_height="60dp"
-                    android:layout_centerVertical="true"
-                    android:background="@drawable/button"
-                    android:src="@drawable/ic_baseline_arrow_forward_24" />
-            </RelativeLayout>
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btLogin"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_centerVertical="true"
+                android:text="JOIN"
+                android:textColor="@color/white"
+                android:background="@drawable/button"></androidx.appcompat.widget.AppCompatButton>
+        </RelativeLayout>
 
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/tvRegister"
@@ -114,7 +115,7 @@
             android:textSize="20sp"
             android:textStyle="bold" />
 
-        </RelativeLayout>
+    </RelativeLayout>
 
 
 

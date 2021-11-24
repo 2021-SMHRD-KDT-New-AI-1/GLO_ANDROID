@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#008283"
-    tools:context=".Fragment2">
+    tools:context=".main3_music">
 
     <WebView
         android:id="@+id/webview2"
