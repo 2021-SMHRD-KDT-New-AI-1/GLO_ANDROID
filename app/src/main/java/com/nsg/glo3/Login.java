@@ -34,8 +34,7 @@ public class Login extends AppCompatActivity {
 
     private static final String TAG = "MAIN";
     EditText edt_id, edt_pw;
-    ImageButton btLogin;
-    AppCompatButton tvRegister;
+    AppCompatButton btLogin, tvRegister;
     RequestQueue requestQueue;
     SharedPreferences spf_user_info;
     SharedPreferences.Editor editor_user_info;
