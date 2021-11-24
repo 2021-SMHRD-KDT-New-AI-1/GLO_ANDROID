@@ -15,7 +15,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:layout_marginTop="28dp"
+        android:layout_marginTop="10dp"
         android:fontFamily="@font/applesdgothicneoeb"
         android:gravity="center_horizontal"
         android:lineSpacingExtra="10sp"
@@ -32,7 +32,7 @@
         android:layout_width="373dp"
         android:layout_height="545dp"
         android:layout_marginStart="10dp"
-        android:layout_marginTop="12dp"
+        android:layout_marginTop="2dp"
         android:layout_marginEnd="10dp"
         android:background="#FFFFFF"
         app:layout_constraintEnd_toEndOf="parent"
@@ -51,8 +51,6 @@
 
 
     </RelativeLayout>
-
-
 
 
     <androidx.appcompat.widget.AppCompatButton
