@@ -1,5 +1,6 @@
 package com.nsg.glo3;
 import android.content.Context;
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -8,11 +9,16 @@ import android.view.ViewGroup;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 
+import androidx.cardview.widget.CardView;
 import androidx.fragment.app.Fragment;
 
+import java.util.ArrayList;
+import java.util.List;
 
 
 public class main3_music extends Fragment {
+
+    CardView cardView,cardView2,cardView3;
 
 
     @Override
@@ -22,15 +28,21 @@ public class main3_music extends Fragment {
 
 
         View view = inflater.inflate(R.layout.main3_music, container, false);
-        WebView wv = view.findViewById(R.id.webview2);
+        cardView = view.findViewById(R.id.cv1);
+        cardView2 = view.findViewById(R.id.cardView2);
+        cardView3 = view.findViewById(R.id.cardView3);
 
 
-        SharedPreferences spf = getActivity().getSharedPreferences("url_spf", Context.MODE_PRIVATE);
+        List<String> data = new ArrayList<String>();
 
-        String url = spf.getString("url","https://www.youtube.com/results?search_query=%EC%9A%B0%EC%9A%B8%ED%95%A0%EB%95%8C+%EB%93%A3%EB%8A%94+%EB%85%B8%EB%9E%98");
-        wv.setWebViewClient(new WebViewClient());
-        wv.getSettings().setJavaScriptEnabled(true); // javascript 활성화
-        wv.loadUrl(url);
+        cardView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getActivity(),ListActivity.class);
+                startActivity(intent);
+            }
+        });
+
 
 
 

@@ -21,15 +21,15 @@ public class main4_media extends Fragment {
 
 
         View view = inflater.inflate(R.layout.main4_media, container, false);
-        WebView wv = view.findViewById(R.id.webview3);
+       // WebView wv = view.findViewById(R.id.webview3);
 
 
-        SharedPreferences spf = getActivity().getSharedPreferences("url_spf", Context.MODE_PRIVATE);
+       // SharedPreferences spf = getActivity().getSharedPreferences("url_spf", Context.MODE_PRIVATE);
 
-        String url = spf.getString("url","https://www.youtube.com/results?search_query=%EC%9A%B0%EC%9A%B8%ED%95%A0%EB%95%8C+%EB%B3%B4%EB%8A%94+%EC%98%81%EC%83%81");
-        wv.setWebViewClient(new WebViewClient());
-        wv.getSettings().setJavaScriptEnabled(true);
-        wv.loadUrl(url);
+       // String url = spf.getString("url","https://www.youtube.com/results?search_query=%EC%9A%B0%EC%9A%B8%ED%95%A0%EB%95%8C+%EB%B3%B4%EB%8A%94+%EC%98%81%EC%83%81");
+       // wv.setWebViewClient(new WebViewClient());
+       // wv.getSettings().setJavaScriptEnabled(true);
+       // wv.loadUrl(url);
 
 
 
