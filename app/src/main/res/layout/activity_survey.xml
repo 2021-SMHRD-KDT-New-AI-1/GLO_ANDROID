@@ -40,14 +40,1019 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView2">
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:fontFamily="@font/applesdgothicneoeb"
-            android:text=" 1. 평소에는 아무렇지도 않던 일들이 괴롭고 귀찮게 느껴졌다"
-            android:textColor="#4A4949"
-            android:textSize="15sp" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <ScrollView
+                android:id="@+id/scrollView2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:ignore="SpeakableTextPresentCheck">
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    tools:ignore="MissingConstraints">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="0dp"
+                        android:fontFamily="@font/applesdgothicneoeb"
+                        android:text=" 1. 평소에는 아무렇지도 않던 일들이 괴롭고 귀찮게 느껴졌다"
+                        android:textColor="#4A4949"
+                        android:textSize="15sp" />
+
+                    <RadioGroup
+                        android:id="@+id/rg_q1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.714"
+                        app:layout_constraintStart_toStartOf="parent"
+                        tools:ignore="DuplicateIds">
+
+                        <RadioButton
+                            android:id="@+id/rb_q1_1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="12dp"
+                            android:text="전혀없었다" />
+
+                        <RadioButton
+                            android:id="@+id/rb_q1_2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="12dp"
+                            android:text="한두번있었다" />
+
+                        <RadioButton
+                            android:id="@+id/rb_q1_3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="12dp"
+                            android:text="많이있었다" />
+
+                        <RadioButton
+                            android:id="@+id/rb_q1_4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="12dp"
+                            android:text="매일있었다" />
+
+                    </RadioGroup>
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/applesdgothicneoeb"
+                        android:text=" 2. 먹고싶지 않고 식욕이 없었다"
+                        android:textColor="#4A4949"
+                        android:textSize="15sp" />
+
+                    <RadioGroup
+                        android:id="@+id/rg_q2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.714"
+                        app:layout_constraintStart_toStartOf="parent"
+                        tools:ignore="DuplicateIds">
+
+                        <RadioButton
+                            android:id="@+id/rb_q2_1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="12dp"
+                            android:text="전혀없었다" />
+
+                        <RadioButton
+                            android:id="@+id/rb_q2_2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="12dp"
+                            android:text="한두번있었다" />
+
+                        <RadioButton
+                            android:id="@+id/rb_q2_3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="12dp"
+                            android:text="많이있었다" />
+
+                        <RadioButton
+                            android:id="@+id/rb_q2_4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="12dp"
+                            android:text="매일있었다" />
+
+                    </RadioGroup>
+
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/applesdgothicneoeb"
+                        android:text=" 3. 도움을 받더라도 나의 울적한 기분을 떨치기 힘들것같다"
+                        android:textColor="#4A4949"
+                        android:textSize="15sp" />
+
+                    <RadioGroup
+                        android:id="@+id/rg_q3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.714"
+                        app:layout_constraintStart_toStartOf="parent"
+                        tools:ignore="DuplicateIds">
+
+                        <RadioButton
+                            android:id="@+id/rb_q3_1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="12dp"
+                            android:text="전혀없었다" />
+
+                        <RadioButton
+                            android:id="@+id/rb_q3_2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="12dp"
+                            android:text="한두번있었다" />
+
+                        <RadioButton
+                            android:id="@+id/rb_q3_3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="12dp"
+                            android:text="많이있었다" />
+
+                        <RadioButton
+                            android:id="@+id/rb_q3_4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="12dp"
+                            android:text="매일있었다" />
+
+                    </RadioGroup>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/applesdgothicneoeb"
+                        android:text=" 4. 무슨 일을 하든 정신을 집중하기가 힘들었다"
+                        android:textColor="#4A4949"
+                        android:textSize="15sp" />
+
+                    <RadioGroup
+                        android:id="@+id/rg_q4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.714"
+                        app:layout_constraintStart_toStartOf="parent"
+                        tools:ignore="DuplicateIds">
+
+                        <RadioButton
+                            android:id="@+id/rb_q4_1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="12dp"
+                            android:text="전혀없었다" />
+
+                        <RadioButton
+                            android:id="@+id/rb_q4_2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="12dp"
+                            android:text="한두번있었다" />
+
+                        <RadioButton
+                            android:id="@+id/rb_q4_3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="12dp"
+                            android:text="많이있었다" />
+
+                        <RadioButton
+                            android:id="@+id/rb_q4_4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="12dp"
+                            android:text="매일있었다" />
+
+                    </RadioGroup>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/applesdgothicneoeb"
+                        android:text=" 5. 비교적 잘 지냈다"
+                        android:textColor="#4A4949"
+                        android:textSize="15sp" />
+
+                    <RadioGroup
+                        android:id="@+id/rg_q5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.714"
+                        app:layout_constraintStart_toStartOf="parent"
+                        tools:ignore="DuplicateIds">
+
+                        <RadioButton
+                            android:id="@+id/rb_q5_1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="12dp"
+                            android:text="전혀없었다" />
+
+                        <RadioButton
+                            android:id="@+id/rb_q5_2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="12dp"
+                            android:text="한두번있었다" />
+
+                        <RadioButton
+                            android:id="@+id/rb_q5_3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="12dp"
+                            android:text="많이있었다" />
+
+                        <RadioButton
+                            android:id="@+id/rb_q5_4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="12dp"
+                            android:text="매일있었다" />
+
+                    </RadioGroup>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/applesdgothicneoeb"
+                        android:text=" 6. 상당히 우울했다"
+                        android:textColor="#4A4949"
+                        android:textSize="15sp" />
+
+                    <RadioGroup
+                        android:id="@+id/rg_q6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.714"
+                        app:layout_constraintStart_toStartOf="parent"
+                        tools:ignore="DuplicateIds">
+
+                        <RadioButton
+                            android:id="@+id/rb_q6_1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="12dp"
+                            android:text="전혀없었다" />
+
+                        <RadioButton
+                            android:id="@+id/rb_q6_2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="12dp"
+                            android:text="한두번있었다" />
+
+                        <RadioButton
+                            android:id="@+id/rb_q6_3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="12dp"
+                            android:text="많이있었다" />
+
+                        <RadioButton
+                            android:id="@+id/rb_q6_4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="12dp"
+                            android:text="매일있었다" />
+
+                    </RadioGroup>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/applesdgothicneoeb"
+                        android:text=" 7. 모든 일들이 힘들게 느껴졌다"
+                        android:textColor="#4A4949"
+                        android:textSize="15sp" />
+
+                    <RadioGroup
+                        android:id="@+id/rg_q7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.714"
+                        app:layout_constraintStart_toStartOf="parent"
+                        tools:ignore="DuplicateIds">
+
+                        <RadioButton
+                            android:id="@+id/rb_q7_1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="12dp"
+                            android:text="전혀없었다" />
+
+                        <RadioButton
+                            android:id="@+id/rb_q7_2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="12dp"
+                            android:text="한두번있었다" />
+
+                        <RadioButton
+                            android:id="@+id/rb_q7_3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="12dp"
+                            android:text="많이있었다" />
+
+                        <RadioButton
+                            android:id="@+id/rb_q7_4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="12dp"
+                            android:text="매일있었다" />
+
+                    </RadioGroup>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/applesdgothicneoeb"
+                        android:text=" 8. 앞일이 암담하게 느껴졌다"
+                        android:textColor="#4A4949"
+                        android:textSize="15sp" />
+
+                    <RadioGroup
+                        android:id="@+id/rg_q8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.714"
+                        app:layout_constraintStart_toStartOf="parent"
+                        tools:ignore="DuplicateIds">
+
+                        <RadioButton
+                            android:id="@+id/rb_q8_1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="12dp"
+                            android:text="전혀없었다" />
+
+                        <RadioButton
+                            android:id="@+id/rb_q8_2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="12dp"
+                            android:text="한두번있었다" />
+
+                        <RadioButton
+                            android:id="@+id/rb_q8_3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="12dp"
+                            android:text="많이있었다" />
+
+                        <RadioButton
+                            android:id="@+id/rb_q8_4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="12dp"
+                            android:text="매일있었다" />
+
+                    </RadioGroup>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/applesdgothicneoeb"
+                        android:text=" 9. 지금까지의 내 인생은 실패작이라는 생각이 들었다"
+                        android:textColor="#4A4949"
+                        android:textSize="15sp" />
+
+                    <RadioGroup
+                        android:id="@+id/rg_q9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.714"
+                        app:layout_constraintStart_toStartOf="parent"
+                        tools:ignore="DuplicateIds">
+
+                        <RadioButton
+                            android:id="@+id/rb_q9_1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="12dp"
+                            android:text="전혀없었다" />
+
+                        <RadioButton
+                            android:id="@+id/rb_q9_2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="12dp"
+                            android:text="한두번있었다" />
+
+                        <RadioButton
+                            android:id="@+id/rb_q9_3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="12dp"
+                            android:text="많이있었다" />
+
+                        <RadioButton
+                            android:id="@+id/rb_q9_4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="12dp"
+                            android:text="매일있었다" />
+
+                    </RadioGroup>
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/applesdgothicneoeb"
+                        android:text=" 10. 적어도 보통 사람들만큼의 능력은 있었다고 생각한다"
+                        android:textColor="#4A4949"
+                        android:textSize="15sp" />
+
+                    <RadioGroup
+                        android:id="@+id/rg_q10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.714"
+                        app:layout_constraintStart_toStartOf="parent"
+                        tools:ignore="DuplicateIds">
+
+                        <RadioButton
+                            android:id="@+id/rb_q10_1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="12dp"
+                            android:text="전혀없었다" />
+
+                        <RadioButton
+                            android:id="@+id/rb_q10_2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="12dp"
+                            android:text="한두번있었다" />
+
+                        <RadioButton
+                            android:id="@+id/rb_q10_3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="12dp"
+                            android:text="많이있었다" />
+
+                        <RadioButton
+                            android:id="@+id/rb_q10_4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="12dp"
+                            android:text="매일있었다" />
+
+                    </RadioGroup>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/applesdgothicneoeb"
+                        android:text=" 11. 잠을 설쳤다"
+                        android:textColor="#4A4949"
+                        android:textSize="15sp" />
+
+                    <RadioGroup
+                        android:id="@+id/rg_q11"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.714"
+                        app:layout_constraintStart_toStartOf="parent"
+                        tools:ignore="DuplicateIds">
+
+                        <RadioButton
+                            android:id="@+id/rb_q11_1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="12dp"
+                            android:text="전혀없었다" />
+
+                        <RadioButton
+                            android:id="@+id/rb_q11_2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="12dp"
+                            android:text="한두번있었다" />
+
+                        <RadioButton
+                            android:id="@+id/rb_q11_3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="12dp"
+                            android:text="많이있었다" />
+
+                        <RadioButton
+                            android:id="@+id/rb_q11_4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="12dp"
+                            android:text="매일있었다" />
+
+                    </RadioGroup>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/applesdgothicneoeb"
+                        android:text=" 12. 두려움을 느꼈다"
+                        android:textColor="#4A4949"
+                        android:textSize="15sp" />
+
+                    <RadioGroup
+                        android:id="@+id/rg_q12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.714"
+                        app:layout_constraintStart_toStartOf="parent"
+                        tools:ignore="DuplicateIds">
+
+                        <RadioButton
+                            android:id="@+id/rb_q12_1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="12dp"
+                            android:text="전혀없었다" />
+
+                        <RadioButton
+                            android:id="@+id/rb_q12_2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="12dp"
+                            android:text="한두번있었다" />
+
+                        <RadioButton
+                            android:id="@+id/rb_q12_3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="12dp"
+                            android:text="많이있었다" />
+
+                        <RadioButton
+                            android:id="@+id/rb_q12_4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="12dp"
+                            android:text="매일있었다" />
+
+                    </RadioGroup>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/applesdgothicneoeb"
+                        android:text=" 13. 평소에 비해 말수가 적었다"
+                        android:textColor="#4A4949"
+                        android:textSize="15sp" />
+
+                    <RadioGroup
+                        android:id="@+id/rg_q13"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.714"
+                        app:layout_constraintStart_toStartOf="parent"
+                        tools:ignore="DuplicateIds">
+
+                        <RadioButton
+                            android:id="@+id/rb_q13_1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="12dp"
+                            android:text="전혀없었다" />
+
+                        <RadioButton
+                            android:id="@+id/rb_q13_2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="12dp"
+                            android:text="한두번있었다" />
+
+                        <RadioButton
+                            android:id="@+id/rb_q13_3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="12dp"
+                            android:text="많이있었다" />
+
+                        <RadioButton
+                            android:id="@+id/rb_q13_4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="12dp"
+                            android:text="매일있었다" />
+
+                    </RadioGroup>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/applesdgothicneoeb"
+                        android:text=" 14. 세상에 홀로 있는 듯한 외로움을 느꼈다"
+                        android:textColor="#4A4949"
+                        android:textSize="15sp" />
+
+                    <RadioGroup
+                        android:id="@+id/rg_q14"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.714"
+                        app:layout_constraintStart_toStartOf="parent"
+                        tools:ignore="DuplicateIds">
+
+                        <RadioButton
+                            android:id="@+id/rb_q14_1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="12dp"
+                            android:text="전혀없었다" />
+
+                        <RadioButton
+                            android:id="@+id/rb_q14_2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="12dp"
+                            android:text="한두번있었다" />
+
+                        <RadioButton
+                            android:id="@+id/rb_q14_3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="12dp"
+                            android:text="많이있었다" />
+
+                        <RadioButton
+                            android:id="@+id/rb_q14_4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="12dp"
+                            android:text="매일있었다" />
+
+                    </RadioGroup>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/applesdgothicneoeb"
+                        android:text=" 15. 큰 불만 없이 생활했다"
+                        android:textColor="#4A4949"
+                        android:textSize="15sp" />
+
+                    <RadioGroup
+                        android:id="@+id/rg_q15"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.714"
+                        app:layout_constraintStart_toStartOf="parent"
+                        tools:ignore="DuplicateIds">
+
+                        <RadioButton
+                            android:id="@+id/rb_q15_1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="12dp"
+                            android:text="전혀없었다" />
+
+                        <RadioButton
+                            android:id="@+id/rb_q15_2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="12dp"
+                            android:text="한두번있었다" />
+
+                        <RadioButton
+                            android:id="@+id/rb_q15_3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="12dp"
+                            android:text="많이있었다" />
+
+                        <RadioButton
+                            android:id="@+id/rb_q15_4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="12dp"
+                            android:text="매일있었다" />
+
+                    </RadioGroup>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/applesdgothicneoeb"
+                        android:text=" 16. 사람들이 나에게 차갑게 대하는 것 같았다"
+                        android:textColor="#4A4949"
+                        android:textSize="15sp" />
+
+                    <RadioGroup
+                        android:id="@+id/rg_q16"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.714"
+                        app:layout_constraintStart_toStartOf="parent"
+                        tools:ignore="DuplicateIds">
+
+                        <RadioButton
+                            android:id="@+id/rb_q16_1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="12dp"
+                            android:text="전혀없었다" />
+
+                        <RadioButton
+                            android:id="@+id/rb_q16_2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="12dp"
+                            android:text="한두번있었다" />
+
+                        <RadioButton
+                            android:id="@+id/rb_q16_3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="12dp"
+                            android:text="많이있었다" />
+
+                        <RadioButton
+                            android:id="@+id/rb_q16_4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="12dp"
+                            android:text="매일있었다" />
+
+                    </RadioGroup>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/applesdgothicneoeb"
+                        android:text=" 17. 갑자기 울음이 나왔다"
+                        android:textColor="#4A4949"
+                        android:textSize="15sp" />
+
+                    <RadioGroup
+                        android:id="@+id/rg_q17"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.714"
+                        app:layout_constraintStart_toStartOf="parent"
+                        tools:ignore="DuplicateIds">
+
+                        <RadioButton
+                            android:id="@+id/rb_q17_1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="12dp"
+                            android:text="전혀없었다" />
+
+                        <RadioButton
+                            android:id="@+id/rb_q17_2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="12dp"
+                            android:text="한두번있었다" />
+
+                        <RadioButton
+                            android:id="@+id/rb_q17_3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="12dp"
+                            android:text="많이있었다" />
+
+                        <RadioButton
+                            android:id="@+id/rb_q17_4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="12dp"
+                            android:text="매일있었다" />
+
+                    </RadioGroup>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/applesdgothicneoeb"
+                        android:text=" 18. 마음이 슬펐다"
+                        android:textColor="#4A4949"
+                        android:textSize="15sp" />
+
+                    <RadioGroup
+                        android:id="@+id/rg_q18"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.714"
+                        app:layout_constraintStart_toStartOf="parent"
+                        tools:ignore="DuplicateIds">
+
+                        <RadioButton
+                            android:id="@+id/rb_q18_1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="12dp"
+                            android:text="전혀없었다" />
+
+                        <RadioButton
+                            android:id="@+id/rb_q18_2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="12dp"
+                            android:text="한두번있었다" />
+
+                        <RadioButton
+                            android:id="@+id/rb_q18_3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="12dp"
+                            android:text="많이있었다" />
+
+                        <RadioButton
+                            android:id="@+id/rb_q18_4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="12dp"
+                            android:text="매일있었다" />
+
+                    </RadioGroup>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/applesdgothicneoeb"
+                        android:text=" 19. 사람들이 나를 싫어하는 것 같았다"
+                        android:textColor="#4A4949"
+                        android:textSize="15sp" />
+
+                    <RadioGroup
+                        android:id="@+id/rg_q19"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.714"
+                        app:layout_constraintStart_toStartOf="parent"
+                        tools:ignore="DuplicateIds">
+
+                        <RadioButton
+                            android:id="@+id/rb_q19_1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="12dp"
+                            android:text="전혀없었다" />
+
+                        <RadioButton
+                            android:id="@+id/rb_q19_2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="12dp"
+                            android:text="한두번있었다" />
+
+                        <RadioButton
+                            android:id="@+id/rb_q19_3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="12dp"
+                            android:text="많이있었다" />
+
+                        <RadioButton
+                            android:id="@+id/rb_q19_4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="12dp"
+                            android:text="매일있었다" />
+
+                    </RadioGroup>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/applesdgothicneoeb"
+                        android:text=" 20. 도무지 무엇을 해 나갈 엄두가 나지 않았다"
+                        android:textColor="#4A4949"
+                        android:textSize="15sp" />
+
+                    <RadioGroup
+                        android:id="@+id/rg_q20"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.714"
+                        app:layout_constraintStart_toStartOf="parent"
+                        tools:ignore="DuplicateIds">
+
+                        <RadioButton
+                            android:id="@+id/rb_q20_1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="12dp"
+                            android:text="전혀없었다" />
+
+                        <RadioButton
+                            android:id="@+id/rb_q20_2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="12dp"
+                            android:text="한두번있었다" />
+
+                        <RadioButton
+                            android:id="@+id/rb_q20_3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="12dp"
+                            android:text="많이있었다" />
+
+                        <RadioButton
+                            android:id="@+id/rb_q20_4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="12dp"
+                            android:text="매일있었다" />
+
+                    </RadioGroup>
+
+
+
+                </LinearLayout>
+
+            </ScrollView>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
 
 
     </RelativeLayout>
