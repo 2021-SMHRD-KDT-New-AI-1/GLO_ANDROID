@@ -48,7 +48,7 @@ public class Login extends AppCompatActivity {
         edt_id = findViewById(R.id.edt_id);
         edt_pw = findViewById(R.id.edt_pw);
         btLogin = findViewById(R.id.btLogin);
-        tvRegister = findViewById(R.id.tvRegister);
+        tvRegister = findViewById(R.id.user_regis);
 
         if (requestQueue == null) {
             requestQueue = Volley.newRequestQueue(getApplicationContext());
