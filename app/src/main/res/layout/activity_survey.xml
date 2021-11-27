@@ -130,28 +130,28 @@
                         tools:ignore="DuplicateIds">
 
                         <RadioButton
-                            android:id="@+id/rb_q2_1"
+                            android:id="@+id/rb_q1_5"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:textSize="12dp"
                             android:text="전혀없었다" />
 
                         <RadioButton
-                            android:id="@+id/rb_q2_2"
+                            android:id="@+id/rb_q1_6"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:textSize="12dp"
                             android:text="한두번있었다" />
 
                         <RadioButton
-                            android:id="@+id/rb_q2_3"
+                            android:id="@+id/rb_q1_7"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:textSize="12dp"
                             android:text="많이있었다" />
 
                         <RadioButton
-                            android:id="@+id/rb_q2_4"
+                            android:id="@+id/rb_q1_8"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:textSize="12dp"
@@ -181,28 +181,28 @@
                         tools:ignore="DuplicateIds">
 
                         <RadioButton
-                            android:id="@+id/rb_q3_1"
+                            android:id="@+id/rb_q1_9"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:textSize="12dp"
                             android:text="전혀없었다" />
 
                         <RadioButton
-                            android:id="@+id/rb_q3_2"
+                            android:id="@+id/rb_q1_10"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:textSize="12dp"
                             android:text="한두번있었다" />
 
                         <RadioButton
-                            android:id="@+id/rb_q3_3"
+                            android:id="@+id/rb_q1_11"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:textSize="12dp"
                             android:text="많이있었다" />
 
                         <RadioButton
-                            android:id="@+id/rb_q3_4"
+                            android:id="@+id/rb_q1_12"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:textSize="12dp"
@@ -230,28 +230,28 @@
                         tools:ignore="DuplicateIds">
 
                         <RadioButton
-                            android:id="@+id/rb_q4_1"
+                            android:id="@+id/rb_q1_13"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:textSize="12dp"
                             android:text="전혀없었다" />
 
                         <RadioButton
-                            android:id="@+id/rb_q4_2"
+                            android:id="@+id/rb_q1_14"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:textSize="12dp"
                             android:text="한두번있었다" />
 
                         <RadioButton
-                            android:id="@+id/rb_q4_3"
+                            android:id="@+id/rb_q1_15"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:textSize="12dp"
                             android:text="많이있었다" />
 
                         <RadioButton
-                            android:id="@+id/rb_q4_4"
+                            android:id="@+id/rb_q1_16"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:textSize="12dp"
@@ -264,7 +264,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="10dp"
                         android:fontFamily="@font/applesdgothicneoeb"
-                        android:text=" 5. 비교적 잘 지냈다"
+                        android:text=" 5. 비교적 잘 지내지 못했다"
                         android:textColor="#4A4949"
                         android:textSize="15sp" />
 
@@ -279,28 +279,28 @@
                         tools:ignore="DuplicateIds">
 
                         <RadioButton
-                            android:id="@+id/rb_q5_1"
+                            android:id="@+id/rb_q1_17"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:textSize="12dp"
                             android:text="전혀없었다" />
 
                         <RadioButton
-                            android:id="@+id/rb_q5_2"
+                            android:id="@+id/rb_q1_18"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:textSize="12dp"
                             android:text="한두번있었다" />
 
                         <RadioButton
-                            android:id="@+id/rb_q5_3"
+                            android:id="@+id/rb_q1_19"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:textSize="12dp"
                             android:text="많이있었다" />
 
                         <RadioButton
-                            android:id="@+id/rb_q5_4"
+                            android:id="@+id/rb_q1_20"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:textSize="12dp"
@@ -328,28 +328,28 @@
                         tools:ignore="DuplicateIds">
 
                         <RadioButton
-                            android:id="@+id/rb_q6_1"
+                            android:id="@+id/rb_q1_21"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:textSize="12dp"
                             android:text="전혀없었다" />
 
                         <RadioButton
-                            android:id="@+id/rb_q6_2"
+                            android:id="@+id/rb_q1_22"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:textSize="12dp"
                             android:text="한두번있었다" />
 
                         <RadioButton
-                            android:id="@+id/rb_q6_3"
+                            android:id="@+id/rb_q1_23"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:textSize="12dp"
                             android:text="많이있었다" />
 
                         <RadioButton
-                            android:id="@+id/rb_q6_4"
+                            android:id="@+id/rb_q1_24"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:textSize="12dp"
@@ -377,28 +377,28 @@
                         tools:ignore="DuplicateIds">
 
                         <RadioButton
-                            android:id="@+id/rb_q7_1"
+                            android:id="@+id/rb_q1_25"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:textSize="12dp"
                             android:text="전혀없었다" />
 
                         <RadioButton
-                            android:id="@+id/rb_q7_2"
+                            android:id="@+id/rb_q1_26"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:textSize="12dp"
                             android:text="한두번있었다" />
 
                         <RadioButton
-                            android:id="@+id/rb_q7_3"
+                            android:id="@+id/rb_q1_27"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:textSize="12dp"
                             android:text="많이있었다" />
 
                         <RadioButton
-                            android:id="@+id/rb_q7_4"
+                            android:id="@+id/rb_q1_28"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:textSize="12dp"
@@ -426,28 +426,28 @@
                         tools:ignore="DuplicateIds">
 
                         <RadioButton
-                            android:id="@+id/rb_q8_1"
+                            android:id="@+id/rb_q1_29"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:textSize="12dp"
                             android:text="전혀없었다" />
 
                         <RadioButton
-                            android:id="@+id/rb_q8_2"
+                            android:id="@+id/rb_q1_30"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:textSize="12dp"
                             android:text="한두번있었다" />
 
                         <RadioButton
-                            android:id="@+id/rb_q8_3"
+                            android:id="@+id/rb_q1_31"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:textSize="12dp"
                             android:text="많이있었다" />
 
                         <RadioButton
-                            android:id="@+id/rb_q8_4"
+                            android:id="@+id/rb_q1_32"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:textSize="12dp"
@@ -475,28 +475,28 @@
                         tools:ignore="DuplicateIds">
 
                         <RadioButton
-                            android:id="@+id/rb_q9_1"
+                            android:id="@+id/rb_q1_33"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:textSize="12dp"
                             android:text="전혀없었다" />
 
                         <RadioButton
-                            android:id="@+id/rb_q9_2"
+                            android:id="@+id/rb_q1_34"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:textSize="12dp"
                             android:text="한두번있었다" />
 
                         <RadioButton
-                            android:id="@+id/rb_q9_3"
+                            android:id="@+id/rb_q1_35"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:textSize="12dp"
                             android:text="많이있었다" />
 
                         <RadioButton
-                            android:id="@+id/rb_q9_4"
+                            android:id="@+id/rb_q1_36"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:textSize="12dp"
@@ -510,7 +510,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="10dp"
                         android:fontFamily="@font/applesdgothicneoeb"
-                        android:text=" 10. 적어도 보통 사람들만큼의 능력은 있었다고 생각한다"
+                        android:text=" 10. 보통 사람들만큼의 능력은 없었다고 생각한다"
                         android:textColor="#4A4949"
                         android:textSize="15sp" />
 
@@ -525,28 +525,28 @@
                         tools:ignore="DuplicateIds">
 
                         <RadioButton
-                            android:id="@+id/rb_q10_1"
+                            android:id="@+id/rb_q1_37"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:textSize="12dp"
                             android:text="전혀없었다" />
 
                         <RadioButton
-                            android:id="@+id/rb_q10_2"
+                            android:id="@+id/rb_q1_38"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:textSize="12dp"
                             android:text="한두번있었다" />
 
                         <RadioButton
-                            android:id="@+id/rb_q10_3"
+                            android:id="@+id/rb_q1_39"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:textSize="12dp"
                             android:text="많이있었다" />
 
                         <RadioButton
-                            android:id="@+id/rb_q10_4"
+                            android:id="@+id/rb_q1_40"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:textSize="12dp"
@@ -574,28 +574,28 @@
                         tools:ignore="DuplicateIds">
 
                         <RadioButton
-                            android:id="@+id/rb_q11_1"
+                            android:id="@+id/rb_q1_41"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:textSize="12dp"
                             android:text="전혀없었다" />
 
                         <RadioButton
-                            android:id="@+id/rb_q11_2"
+                            android:id="@+id/rb_q1_42"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:textSize="12dp"
                             android:text="한두번있었다" />
 
                         <RadioButton
-                            android:id="@+id/rb_q11_3"
+                            android:id="@+id/rb_q1_43"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:textSize="12dp"
                             android:text="많이있었다" />
 
                         <RadioButton
-                            android:id="@+id/rb_q11_4"
+                            android:id="@+id/rb_q1_44"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:textSize="12dp"
@@ -623,28 +623,28 @@
                         tools:ignore="DuplicateIds">
 
                         <RadioButton
-                            android:id="@+id/rb_q12_1"
+                            android:id="@+id/rb_q1_45"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:textSize="12dp"
                             android:text="전혀없었다" />
 
                         <RadioButton
-                            android:id="@+id/rb_q12_2"
+                            android:id="@+id/rb_q1_46"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:textSize="12dp"
                             android:text="한두번있었다" />
 
                         <RadioButton
-                            android:id="@+id/rb_q12_3"
+                            android:id="@+id/rb_q1_47"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:textSize="12dp"
                             android:text="많이있었다" />
 
                         <RadioButton
-                            android:id="@+id/rb_q12_4"
+                            android:id="@+id/rb_q1_48"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:textSize="12dp"
@@ -672,28 +672,28 @@
                         tools:ignore="DuplicateIds">
 
                         <RadioButton
-                            android:id="@+id/rb_q13_1"
+                            android:id="@+id/rb_q1_49"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:textSize="12dp"
                             android:text="전혀없었다" />
 
                         <RadioButton
-                            android:id="@+id/rb_q13_2"
+                            android:id="@+id/rb_q1_50"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:textSize="12dp"
                             android:text="한두번있었다" />
 
                         <RadioButton
-                            android:id="@+id/rb_q13_3"
+                            android:id="@+id/rb_q1_51"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:textSize="12dp"
                             android:text="많이있었다" />
 
                         <RadioButton
-                            android:id="@+id/rb_q13_4"
+                            android:id="@+id/rb_q1_52"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:textSize="12dp"
@@ -721,28 +721,28 @@
                         tools:ignore="DuplicateIds">
 
                         <RadioButton
-                            android:id="@+id/rb_q14_1"
+                            android:id="@+id/rb_q1_53"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:textSize="12dp"
                             android:text="전혀없었다" />
 
                         <RadioButton
-                            android:id="@+id/rb_q14_2"
+                            android:id="@+id/rb_q1_54"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:textSize="12dp"
                             android:text="한두번있었다" />
 
                         <RadioButton
-                            android:id="@+id/rb_q14_3"
+                            android:id="@+id/rb_q1_55"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:textSize="12dp"
                             android:text="많이있었다" />
 
                         <RadioButton
-                            android:id="@+id/rb_q14_4"
+                            android:id="@+id/rb_q1_56"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:textSize="12dp"
@@ -755,7 +755,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="10dp"
                         android:fontFamily="@font/applesdgothicneoeb"
-                        android:text=" 15. 큰 불만 없이 생활했다"
+                        android:text=" 15. 내 생활에 큰 불만이 있다"
                         android:textColor="#4A4949"
                         android:textSize="15sp" />
 
@@ -770,28 +770,28 @@
                         tools:ignore="DuplicateIds">
 
                         <RadioButton
-                            android:id="@+id/rb_q15_1"
+                            android:id="@+id/rb_q1_57"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:textSize="12dp"
                             android:text="전혀없었다" />
 
                         <RadioButton
-                            android:id="@+id/rb_q15_2"
+                            android:id="@+id/rb_q1_58"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:textSize="12dp"
                             android:text="한두번있었다" />
 
                         <RadioButton
-                            android:id="@+id/rb_q15_3"
+                            android:id="@+id/rb_q1_59"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:textSize="12dp"
                             android:text="많이있었다" />
 
                         <RadioButton
-                            android:id="@+id/rb_q15_4"
+                            android:id="@+id/rb_q1_60"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:textSize="12dp"
@@ -819,28 +819,28 @@
                         tools:ignore="DuplicateIds">
 
                         <RadioButton
-                            android:id="@+id/rb_q16_1"
+                            android:id="@+id/rb_q1_61"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:textSize="12dp"
                             android:text="전혀없었다" />
 
                         <RadioButton
-                            android:id="@+id/rb_q16_2"
+                            android:id="@+id/rb_q1_62"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:textSize="12dp"
                             android:text="한두번있었다" />
 
                         <RadioButton
-                            android:id="@+id/rb_q16_3"
+                            android:id="@+id/rb_q1_63"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:textSize="12dp"
                             android:text="많이있었다" />
 
                         <RadioButton
-                            android:id="@+id/rb_q16_4"
+                            android:id="@+id/rb_q1_64"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:textSize="12dp"
@@ -868,28 +868,28 @@
                         tools:ignore="DuplicateIds">
 
                         <RadioButton
-                            android:id="@+id/rb_q17_1"
+                            android:id="@+id/rb_q1_65"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:textSize="12dp"
                             android:text="전혀없었다" />
 
                         <RadioButton
-                            android:id="@+id/rb_q17_2"
+                            android:id="@+id/rb_q1_66"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:textSize="12dp"
                             android:text="한두번있었다" />
 
                         <RadioButton
-                            android:id="@+id/rb_q17_3"
+                            android:id="@+id/rb_q1_67"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:textSize="12dp"
                             android:text="많이있었다" />
 
                         <RadioButton
-                            android:id="@+id/rb_q17_4"
+                            android:id="@+id/rb_q1_68"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:textSize="12dp"
@@ -917,28 +917,28 @@
                         tools:ignore="DuplicateIds">
 
                         <RadioButton
-                            android:id="@+id/rb_q18_1"
+                            android:id="@+id/rb_q1_69"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:textSize="12dp"
                             android:text="전혀없었다" />
 
                         <RadioButton
-                            android:id="@+id/rb_q18_2"
+                            android:id="@+id/rb_q1_70"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:textSize="12dp"
                             android:text="한두번있었다" />
 
                         <RadioButton
-                            android:id="@+id/rb_q18_3"
+                            android:id="@+id/rb_q1_71"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:textSize="12dp"
                             android:text="많이있었다" />
 
                         <RadioButton
-                            android:id="@+id/rb_q18_4"
+                            android:id="@+id/rb_q1_72"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:textSize="12dp"
@@ -966,28 +966,28 @@
                         tools:ignore="DuplicateIds">
 
                         <RadioButton
-                            android:id="@+id/rb_q19_1"
+                            android:id="@+id/rb_q1_73"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:textSize="12dp"
                             android:text="전혀없었다" />
 
                         <RadioButton
-                            android:id="@+id/rb_q19_2"
+                            android:id="@+id/rb_q1_74"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:textSize="12dp"
                             android:text="한두번있었다" />
 
                         <RadioButton
-                            android:id="@+id/rb_q19_3"
+                            android:id="@+id/rb_q1_75"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:textSize="12dp"
                             android:text="많이있었다" />
 
                         <RadioButton
-                            android:id="@+id/rb_q19_4"
+                            android:id="@+id/rb_q1_76"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:textSize="12dp"
@@ -1015,28 +1015,28 @@
                         tools:ignore="DuplicateIds">
 
                         <RadioButton
-                            android:id="@+id/rb_q20_1"
+                            android:id="@+id/rb_q1_77"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:textSize="12dp"
                             android:text="전혀없었다" />
 
                         <RadioButton
-                            android:id="@+id/rb_q20_2"
+                            android:id="@+id/rb_q1_78"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:textSize="12dp"
                             android:text="한두번있었다" />
 
                         <RadioButton
-                            android:id="@+id/rb_q20_3"
+                            android:id="@+id/rb_q1_79"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:textSize="12dp"
                             android:text="많이있었다" />
 
                         <RadioButton
-                            android:id="@+id/rb_q20_4"
+                            android:id="@+id/rb_q1_80"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:textSize="12dp"
@@ -1059,7 +1059,7 @@
 
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/button"
+        android:id="@+id/complete_btn"
         android:layout_width="300dp"
         android:layout_height="48dp"
         android:layout_marginTop="12dp"
