@@ -3,10 +3,6 @@
     xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item
-        android:id="@+id/menu5"
-        android:icon="@drawable/ic_baseline_other_houses_24"
-        android:title="Home" />
-    <item
         android:id="@+id/menu1"
         android:icon="@android:drawable/sym_action_chat"
         android:title="Ai_Chat" />
