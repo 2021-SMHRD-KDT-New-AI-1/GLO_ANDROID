@@ -14,7 +14,9 @@
         android:usesCleartextTraffic="true">
         <activity
             android:name=".admin_register"
-            android:exported="true" />
+            android:exported="true" >
+
+        </activity>
         <activity
             android:name=".ListActivity"
             android:exported="true" />
@@ -26,7 +28,9 @@
         </activity>
         <activity
             android:name=".user_register"
-            android:exported="true" />
+            android:exported="true" >
+
+        </activity>
         <activity
             android:name=".Login"
             android:exported="true">

@@ -16,7 +16,7 @@
         android:layout_height="482dp"
         android:layout_marginStart="24dp"
         android:layout_marginEnd="24dp"
-        android:layout_marginBottom="80dp"
+        android:layout_marginBottom="100dp"
         android:background="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -76,8 +76,6 @@
                 android:hint="근무지"></EditText>
 
 
-
-
         </LinearLayout>
 
 
@@ -92,7 +90,7 @@
         android:id="@+id/button"
         android:layout_width="300dp"
         android:layout_height="48dp"
-        android:layout_marginTop="12dp"
+        android:layout_marginTop="20dp"
         android:background="@drawable/button_white"
         android:text="Sign up"
         android:textColor="#004648"
