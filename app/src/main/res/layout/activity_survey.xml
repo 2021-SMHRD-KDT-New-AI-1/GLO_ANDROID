@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#C7E3E0"
+    android:background="#FFFFFF"
     tools:context=".MainActivity"
     android:layout_gravity="center"
     android:focusableInTouchMode="true">
@@ -113,7 +113,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="10dp"
+                        android:layout_marginTop="20dp"
                         android:fontFamily="@font/applesdgothicneoeb"
                         android:text=" 2. 먹고싶지 않고 식욕이 없었다"
                         android:textColor="#4A4949"
@@ -164,7 +164,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="10dp"
+                        android:layout_marginTop="20dp"
                         android:fontFamily="@font/applesdgothicneoeb"
                         android:text=" 3. 도움을 받더라도 나의 울적한 기분을 떨치기 힘들것같다"
                         android:textColor="#4A4949"
@@ -213,7 +213,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="10dp"
+                        android:layout_marginTop="20dp"
                         android:fontFamily="@font/applesdgothicneoeb"
                         android:text=" 4. 무슨 일을 하든 정신을 집중하기가 힘들었다"
                         android:textColor="#4A4949"
@@ -262,7 +262,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="10dp"
+                        android:layout_marginTop="20dp"
                         android:fontFamily="@font/applesdgothicneoeb"
                         android:text=" 5. 비교적 잘 지내지 못했다"
                         android:textColor="#4A4949"
@@ -311,7 +311,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="10dp"
+                        android:layout_marginTop="20dp"
                         android:fontFamily="@font/applesdgothicneoeb"
                         android:text=" 6. 상당히 우울했다"
                         android:textColor="#4A4949"
@@ -360,7 +360,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="10dp"
+                        android:layout_marginTop="20dp"
                         android:fontFamily="@font/applesdgothicneoeb"
                         android:text=" 7. 모든 일들이 힘들게 느껴졌다"
                         android:textColor="#4A4949"
@@ -409,7 +409,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="10dp"
+                        android:layout_marginTop="20dp"
                         android:fontFamily="@font/applesdgothicneoeb"
                         android:text=" 8. 앞일이 암담하게 느껴졌다"
                         android:textColor="#4A4949"
@@ -458,7 +458,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="10dp"
+                        android:layout_marginTop="20dp"
                         android:fontFamily="@font/applesdgothicneoeb"
                         android:text=" 9. 지금까지의 내 인생은 실패작이라는 생각이 들었다"
                         android:textColor="#4A4949"
@@ -508,7 +508,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="10dp"
+                        android:layout_marginTop="20dp"
                         android:fontFamily="@font/applesdgothicneoeb"
                         android:text=" 10. 보통 사람들만큼의 능력은 없었다고 생각한다"
                         android:textColor="#4A4949"
@@ -557,7 +557,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="10dp"
+                        android:layout_marginTop="20dp"
                         android:fontFamily="@font/applesdgothicneoeb"
                         android:text=" 11. 잠을 설쳤다"
                         android:textColor="#4A4949"
@@ -606,7 +606,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="10dp"
+                        android:layout_marginTop="20dp"
                         android:fontFamily="@font/applesdgothicneoeb"
                         android:text=" 12. 두려움을 느꼈다"
                         android:textColor="#4A4949"
@@ -655,7 +655,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="10dp"
+                        android:layout_marginTop="20dp"
                         android:fontFamily="@font/applesdgothicneoeb"
                         android:text=" 13. 평소에 비해 말수가 적었다"
                         android:textColor="#4A4949"
@@ -704,7 +704,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="10dp"
+                        android:layout_marginTop="20dp"
                         android:fontFamily="@font/applesdgothicneoeb"
                         android:text=" 14. 세상에 홀로 있는 듯한 외로움을 느꼈다"
                         android:textColor="#4A4949"
@@ -753,7 +753,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="10dp"
+                        android:layout_marginTop="20dp"
                         android:fontFamily="@font/applesdgothicneoeb"
                         android:text=" 15. 내 생활에 큰 불만이 있다"
                         android:textColor="#4A4949"
@@ -802,7 +802,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="10dp"
+                        android:layout_marginTop="20dp"
                         android:fontFamily="@font/applesdgothicneoeb"
                         android:text=" 16. 사람들이 나에게 차갑게 대하는 것 같았다"
                         android:textColor="#4A4949"
@@ -851,7 +851,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="10dp"
+                        android:layout_marginTop="20dp"
                         android:fontFamily="@font/applesdgothicneoeb"
                         android:text=" 17. 갑자기 울음이 나왔다"
                         android:textColor="#4A4949"
@@ -900,7 +900,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="10dp"
+                        android:layout_marginTop="20dp"
                         android:fontFamily="@font/applesdgothicneoeb"
                         android:text=" 18. 마음이 슬펐다"
                         android:textColor="#4A4949"
@@ -949,7 +949,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="10dp"
+                        android:layout_marginTop="20dp"
                         android:fontFamily="@font/applesdgothicneoeb"
                         android:text=" 19. 사람들이 나를 싫어하는 것 같았다"
                         android:textColor="#4A4949"
@@ -998,7 +998,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="10dp"
+                        android:layout_marginTop="20dp"
                         android:fontFamily="@font/applesdgothicneoeb"
                         android:text=" 20. 도무지 무엇을 해 나갈 엄두가 나지 않았다"
                         android:textColor="#4A4949"
