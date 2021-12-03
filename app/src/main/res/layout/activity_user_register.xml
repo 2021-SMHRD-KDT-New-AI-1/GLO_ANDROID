@@ -4,10 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FFFFFF"
-    tools:context=".MainActivity"
     android:layout_gravity="center"
-    android:focusableInTouchMode="true">
+    android:background="#A0C0C1"
+    android:focusableInTouchMode="true"
+    tools:context=".MainActivity">
 
 
     <RelativeLayout
@@ -18,6 +18,7 @@
         android:layout_marginEnd="24dp"
         android:layout_marginBottom="100dp"
         android:background="@drawable/edittext_background"
+        android:elevation="10dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.49"
@@ -147,7 +148,6 @@
 
 
     </RelativeLayout>
-
 
 
     <androidx.appcompat.widget.AppCompatButton

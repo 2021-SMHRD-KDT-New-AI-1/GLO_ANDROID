@@ -39,7 +39,7 @@ public class Login extends AppCompatActivity {
     SharedPreferences spf_user_info;
     SharedPreferences.Editor editor_user_info;
     String url = "http://172.30.1.26:3002/login_a";
-    AppCompatButton user_regis;
+    AppCompatButton user_regis,admin_regis;
 
 
     @Override
@@ -52,7 +52,16 @@ public class Login extends AppCompatActivity {
         btLogin = findViewById(R.id.btLogin);
         tvRegister = findViewById(R.id.user_regis);
         user_regis = findViewById(R.id.user_regis);
+        admin_regis= findViewById(R.id.admin_regis);
 
+
+        admin_regis.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent admin_regi = new Intent(Login.this,admin_register.class);
+                startActivity(admin_regi);
+            }
+        });
 
         user_regis.setOnClickListener(new View.OnClickListener() {
             @Override

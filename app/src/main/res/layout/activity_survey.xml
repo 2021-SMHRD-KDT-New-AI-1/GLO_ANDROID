@@ -63,7 +63,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="0dp"
+                        android:layout_marginTop="20dp"
                         android:fontFamily="@font/applesdgothicneoeb"
                         android:text=" 1. 평소에는 아무렇지도 않던 일들이 괴롭고 귀찮게 느껴졌다"
                         android:textColor="#4A4949"
