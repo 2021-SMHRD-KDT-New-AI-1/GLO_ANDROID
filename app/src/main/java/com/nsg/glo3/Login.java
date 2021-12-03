@@ -38,7 +38,9 @@ public class Login extends AppCompatActivity {
     RequestQueue requestQueue;
     SharedPreferences spf_user_info;
     SharedPreferences.Editor editor_user_info;
-    String url = "http://172.30.1.26:3002/Login2";
+    String url = "http://172.30.1.26:3002/login_a";
+    AppCompatButton user_regis;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -49,6 +51,16 @@ public class Login extends AppCompatActivity {
         edt_pw = findViewById(R.id.edt_pw);
         btLogin = findViewById(R.id.btLogin);
         tvRegister = findViewById(R.id.user_regis);
+        user_regis = findViewById(R.id.user_regis);
+
+
+        user_regis.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent go_regi = new Intent(Login.this,user_register.class);
+                startActivity(go_regi);
+            }
+        });
 
         if (requestQueue == null) {
             requestQueue = Volley.newRequestQueue(getApplicationContext());
@@ -73,6 +85,8 @@ public class Login extends AppCompatActivity {
                             editor_user_info = spf_user_info.edit();
                             editor_user_info.putString("id", id);
                             editor_user_info.putString("pw", pw);
+                            editor_user_info.commit();
+
 
                         } catch (JSONException e) {
                             e.printStackTrace();
@@ -82,13 +96,16 @@ public class Login extends AppCompatActivity {
                         if(result.equals("login_success")){
                             toast = Toast.makeText(getApplicationContext(),"로그인 성공", Toast.LENGTH_SHORT);
                             toast.show();
+                            Log.d("확인", result);
 
-                            Intent intent = new Intent(Login.this, MainActivity.class);
+                            Intent intent = new Intent(Login.this, survey.class);
+                            intent.putExtra("id",edt_id.getText().toString());
                             startActivity(intent);
 
                         }else if(response.equals("login_fail")){
                             toast = Toast.makeText(getApplicationContext(), "ID와 PW 확인", Toast.LENGTH_SHORT);
                             toast.show();
+                            Log.d("에러", result);
                         }
 
 
@@ -115,6 +132,7 @@ public class Login extends AppCompatActivity {
         btLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                Log.d("id",edt_id.getText().toString());
                 requestQueue.add(stringRequest);
             }
         });
