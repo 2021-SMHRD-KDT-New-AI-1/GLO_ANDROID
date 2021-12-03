@@ -27,6 +27,7 @@
             android:text="MusicList-1"
             android:textAlignment="center"
             android:textSize="48sp" />
+
     </RelativeLayout>
 
 </androidx.cardview.widget.CardView>

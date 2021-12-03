@@ -24,12 +24,12 @@ public class main3_music extends Fragment {
 
         View view = inflater.inflate(R.layout.main3_music, container, false);
 
-        cardview1 = view.findViewById(R.id.cardview1);
+        cardview1 = view.findViewById(R.id.cardview6);
 
-        cardview2 = view.findViewById(R.id.cardview2);
-        cardview3 = view.findViewById(R.id.cardview3);
-        cardview4 = view.findViewById(R.id.cardview4);
-        cardview5 = view.findViewById(R.id.cardview5);
+        cardview2 = view.findViewById(R.id.cardview7);
+        cardview3 = view.findViewById(R.id.cardview8);
+        cardview4 = view.findViewById(R.id.cardview9);
+        cardview5 = view.findViewById(R.id.cardview10);
 
 
         List<String> data = new ArrayList<String>();

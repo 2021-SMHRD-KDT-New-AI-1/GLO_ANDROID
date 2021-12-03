@@ -1,17 +1,21 @@
 package com.nsg.glo3;
 
-import android.content.Context;
-import android.content.SharedPreferences;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.webkit.WebView;
-import android.webkit.WebViewClient;
 
+import androidx.cardview.widget.CardView;
 import androidx.fragment.app.Fragment;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class main4_media extends Fragment {
+
+
+    CardView cardview6, cardview7, cardview8, cardview9, cardview10;
 
 
     @Override
@@ -30,6 +34,59 @@ public class main4_media extends Fragment {
        // wv.setWebViewClient(new WebViewClient());
        // wv.getSettings().setJavaScriptEnabled(true);
        // wv.loadUrl(url);
+
+
+
+        cardview6 = view.findViewById(R.id.cardview6);
+
+        cardview7 = view.findViewById(R.id.cardview7);
+        cardview8 = view.findViewById(R.id.cardview8);
+        cardview9 = view.findViewById(R.id.cardview9);
+        cardview10 = view.findViewById(R.id.cardview10);
+
+
+        List<String> data = new ArrayList<String>();
+
+        cardview6.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getActivity(),ListActivity.class);
+                startActivity(intent);
+            }
+        });
+
+
+        cardview7.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getActivity(),ListActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        cardview8.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getActivity(),ListActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        cardview9.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getActivity(),ListActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        cardview10.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getActivity(),ListActivity.class);
+                startActivity(intent);
+            }
+        });
 
 
 

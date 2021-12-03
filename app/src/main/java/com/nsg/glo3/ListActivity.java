@@ -1,6 +1,5 @@
 package com.nsg.glo3;
 
-import androidx.activity.result.contract.ActivityResultContracts;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
@@ -9,19 +8,20 @@ import android.os.Bundle;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
-import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
-
-import java.net.URL;
 
 public class ListActivity extends AppCompatActivity {
 
     private ListView mListView;
     // int [] images = {R.drawable.a , R.drawable.b , R.drawable.c};
-    String [] names = {"Istanbul" , "Ladakh" , "Tokyo" , "www.naver.com"};
 
-    String [] uris = {"https://www.naver.com","https://www.daum.net","https://www.nexon.com", "https://www.naver.com"};
+    String [] names = {"Name-1" , "Name-2" , "Name-3" , "Name-4", "Name-5",
+                       "Name-6", "Name-7", "Name-8", "Name-9", "Name-10"};
+
+    String [] uris = {"https://www.naver.com","https://www.daum.net","https://www.nexon.com", "url-4"
+                     , "url-5", "url-6", "url-7", "url-8", "url-9", "url-10"};
+
 
 
     @Override
@@ -58,7 +58,7 @@ public class ListActivity extends AppCompatActivity {
 
         @Override
         public View getView(int position, View convertView, ViewGroup parent) {
-            convertView = getLayoutInflater().inflate(R.layout.card ,parent , false);
+            convertView = getLayoutInflater().inflate(R.layout.card_listview,parent , false);
             TextView textView = convertView.findViewById(R.id.textView4);
             //ImageView imageView = convertView.findViewById(R.id.imageview);
             textView.setText(names[position]);
