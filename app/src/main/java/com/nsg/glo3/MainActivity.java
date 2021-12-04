@@ -19,7 +19,13 @@ public class MainActivity extends AppCompatActivity {
 
     TextView textView1,textView2;
     MeowBottomNavigation bottomNavigation;
-    String[] weeks = {"월","화","수","목","금","토","일"};
+    String[] weeks = {"평온한 하루 보내시길 바래요",
+            "지치지 않고 잘 이겨내봅시다",
+            "건강, 체력 관리 철저히 합시다",
+            "함께 웃는 그 날이 오기를 바래요",
+            "보고싶은 친구에게 연락 먼저 어떨까요?",
+            "마스크로 답답하지만 마음만은 상쾌하게",
+            "추운 겨울 감기 조심 합시다"};
     String id;
     SharedPreferences spf_user_info;
 
@@ -43,10 +49,10 @@ public class MainActivity extends AppCompatActivity {
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
                 WindowManager.LayoutParams.FLAG_FULLSCREEN);
 
-        bottomNavigation.add(new MeowBottomNavigation.Model(1, R.drawable.ic_baseline_chat_24));
-        bottomNavigation.add(new MeowBottomNavigation.Model(2, R.drawable.ic_baseline_queue_music_24));
-        bottomNavigation.add(new MeowBottomNavigation.Model(3, R.drawable.ic_baseline_live_tv_24));
-        bottomNavigation.add(new MeowBottomNavigation.Model(4, R.drawable.ic_baseline_auto_graph_24));
+        bottomNavigation.add(new MeowBottomNavigation.Model(1, R.drawable.ic_baseline_other_houses_24));
+        bottomNavigation.add(new MeowBottomNavigation.Model(2, R.drawable.ic_baseline_chat_24));
+        bottomNavigation.add(new MeowBottomNavigation.Model(3, R.drawable.ic_baseline_queue_music_24));
+        bottomNavigation.add(new MeowBottomNavigation.Model(4, R.drawable.ic_baseline_live_tv_24));
         bottomNavigation.add(new MeowBottomNavigation.Model(5, R.drawable.ic_baseline_auto_graph_24));
 
 
@@ -80,26 +86,18 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        bottomNavigation.setCount(1, "10");
+
 
         bottomNavigation.show(1, true);
 
-        bottomNavigation.setOnClickMenuListener(new MeowBottomNavigation.ClickListener() {
-            @Override
-            public void onClickItem(MeowBottomNavigation.Model item) {
-                Toast.makeText(getApplicationContext(),
-                        "You Clicked" + item.getId(),
-                        Toast.LENGTH_SHORT).show();
-                
-            }
-        });
+
 
         bottomNavigation.setOnClickMenuListener(new MeowBottomNavigation.ClickListener() {
             @Override
             public void onClickItem(MeowBottomNavigation.Model item) {
-                Toast.makeText(getApplicationContext(),
-                        "You Reselected" + item.getId(),
-                        Toast.LENGTH_SHORT).show();
+//                Toast.makeText(getApplicationContext(),
+//                        "You Reselected" + item.getId(),
+//                        Toast.LENGTH_SHORT).show();
 
             }
         });

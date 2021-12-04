@@ -351,22 +351,6 @@
 
         </TableLayout>
 
-        <TextView
-            android:id="@+id/button2"
-            android:layout_width="320dp"
-            android:layout_height="50dp"
-            android:layout_marginTop="15dp"
-            android:textColor="#FFFFFF"
-            android:textSize="18dp"
-            android:fontFamily="@font/applesdgothicneoeb"
-            android:text="     you can access the GLO web page"
-            android:gravity="center_vertical"
-            android:background="@drawable/green_banner_background"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.498"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/tableLayout" />
-
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

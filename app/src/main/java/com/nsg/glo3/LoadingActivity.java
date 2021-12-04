@@ -38,6 +38,6 @@ public class LoadingActivity extends AppCompatActivity {
                 startActivity(intent);  //Loagin화면을 띄운다.
                 finish();   //현재 액티비티 종료
             }
-        }, 7000); // 화면에 Logo 2초간 보이기
+        }, 2000); // 화면에 Logo 2초간 보이기
     }// startLoading Method..
 }// MainActivity Class..
