@@ -371,7 +371,7 @@
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <FrameLayout
-        android:id="@+id/container"
+        android:id="@+id/frame_layout"
         android:layout_width="411dp"
         android:layout_height="673dp"
         app:layout_constraintBottom_toTopOf="@+id/nav_view"
@@ -391,19 +391,27 @@
         app:layout_constraintGuide_percent="0.9"
         app:layout_constraintStart_toStartOf="parent" />
 
-    <com.google.android.material.bottomnavigation.BottomNavigationView
+
+
+
+    <com.etebarian.meowbottomnavigation.MeowBottomNavigation
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:id="@+id/nav_view"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        app:itemIconTint="@drawable/my_color"
-        app:itemTextColor="#000000"
-        app:labelVisibilityMode="labeled"
+        app:mbn_circleColor="@color/white"
+        app:mbn_selectedIconColor="#1DB7AE"
+        app:mbn_countTextColor="@color/white"
+        app:mbn_countBackgroundColor="#ff6f00"
+        app:mbn_defaultIconColor="@color/white"
+        app:mbn_backgroundBottomColor="#1DB7AE"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/guideline4"
         app:layout_constraintVertical_bias="1.0"
-        app:menu="@menu/my_menu" />
+        app:menu="@menu/my_menu"/>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
