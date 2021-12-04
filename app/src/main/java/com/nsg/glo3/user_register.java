@@ -33,9 +33,9 @@ public class user_register extends AppCompatActivity {
     RadioButton rb_man,rb_woman,rb_yes,rb_no;
     AppCompatButton survey_btn;
     RequestQueue requestQueue;
-    String url = "http://172.30.1.26:3002/signup2";
+    String url = "http://172.30.1.26:3002/signup_a";
     View radioButton,radioButton2;
-    int gender,exp;
+    int gender,exp,user;
 
 
 
@@ -54,7 +54,7 @@ public class user_register extends AppCompatActivity {
         rb_yes = findViewById(R.id.rb_yes);
         rb_no = findViewById(R.id.rb_no);
         survey_btn = findViewById(R.id.survey_btn);
-
+        user = 0;
 
         if (requestQueue == null) {
             requestQueue = Volley.newRequestQueue(getApplicationContext());
@@ -119,6 +119,7 @@ public class user_register extends AppCompatActivity {
                             params.put("age",edt_age.getText().toString());
                             params.put("gender",String.valueOf(gender));
                             params.put("exp",String.valueOf(exp));
+                            params.put("user",String.valueOf(user));
                             //params.put("gender",rd1.getText().toString());
                             //params.put("diagnosis",rd2.getText().toString());
 

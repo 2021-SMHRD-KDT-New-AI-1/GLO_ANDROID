@@ -5,17 +5,21 @@
     <item
         android:id="@+id/menu1"
         android:icon="@android:drawable/sym_action_chat"
-        android:title="Ai_Chat" />
+        android:title="Home" />
     <item
         android:id="@+id/menu2"
+        android:icon="@android:drawable/sym_action_chat"
+        android:title="Ai_Chat" />
+    <item
+        android:id="@+id/menu3"
         android:icon="@android:drawable/stat_sys_headset"
         android:title="Play_Music" />
     <item
-        android:id="@+id/menu3"
+        android:id="@+id/menu4"
         android:icon="@android:drawable/ic_menu_view"
         android:title="Play_Media" />
     <item
-        android:id="@+id/menu4"
+        android:id="@+id/menu5"
         android:icon="@android:drawable/ic_menu_preferences"
         android:title="My_Profile" />
 </menu>

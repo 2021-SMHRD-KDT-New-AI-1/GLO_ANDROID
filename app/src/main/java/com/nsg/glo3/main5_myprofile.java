@@ -41,7 +41,7 @@ public class main5_myprofile extends Fragment {
     ArrayList sum2;
     RequestQueue requestQueue;
     String url = "http://172.30.1.26:3002/score_a2";
-    String score;
+    String score,reqDate;
     String id;
     String arr[];
     SharedPreferences spf_user_info;
@@ -78,8 +78,12 @@ public class main5_myprofile extends Fragment {
                             // Log.d("score2",arr[0]);
                             //score = object.getString("score");
 
-                            score = "!!";
+                            score = object.getString("score");
+                            reqDate = object.getString("reqDate");
+
+
                             Log.d("score",score);
+                            Log.d("reqDate",reqDate);
 
 
 //                            spf_user_info = getSharedPreferences("user_info", Context.MODE_PRIVATE);
