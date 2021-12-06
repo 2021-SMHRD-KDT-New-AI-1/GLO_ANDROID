@@ -32,8 +32,6 @@ public class LoadingActivity extends AppCompatActivity {
 
 
 
-
-
                 Intent intent= new Intent(getApplicationContext(), Login.class);
                 startActivity(intent);  //Loagin화면을 띄운다.
                 finish();   //현재 액티비티 종료
