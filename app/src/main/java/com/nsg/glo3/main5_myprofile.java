@@ -28,6 +28,7 @@ import com.github.mikephil.charting.data.LineData;
 import com.github.mikephil.charting.data.LineDataSet;
 import com.github.mikephil.charting.interfaces.datasets.ILineDataSet;
 
+import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
@@ -70,7 +71,7 @@ public class main5_myprofile extends Fragment {
                         String result = "";
 
                         try {
-                            JSONObject object = new JSONObject(response);
+                            JSONArray object = new JSONArray(response);
 
                             // for (int i = 0; i < 7; i++) {
                             //    arr[i] = object.getString("score");
@@ -78,13 +79,16 @@ public class main5_myprofile extends Fragment {
                             // Log.d("score2",arr[0]);
                             //score = object.getString("score");
 
-                            score = object.getString("score");
-                            reqDate = object.getString("reqDate");
+                            for (int i = 0; i < object.length(); i++) {
+                                JSONObject data1 = (JSONObject) object.get(i);
+
+                                score = data1.getString("score");
+                                reqDate = data1.getString("reqDate");
 
 
-                            Log.d("score",score);
-                            Log.d("reqDate",reqDate);
-
+                                Log.d("score", score);
+                                Log.d("reqDate", reqDate);
+                            }
 
 //                            spf_user_info = getSharedPreferences("user_info", Context.MODE_PRIVATE);
 //                            editor_user_info = spf_user_info.edit();
@@ -96,9 +100,6 @@ public class main5_myprofile extends Fragment {
                         } catch (JSONException e) {
                             e.printStackTrace();
                         }
-
-
-
 
 
                     }
