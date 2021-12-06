@@ -52,7 +52,7 @@ public class ListAdapter extends RecyclerView.Adapter<ListAdapter.ViewHolder> {
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
 
-            title_mv = itemView.findViewById(R.id.title);
+            title_mv = itemView.findViewById(R.id.title_mv);
         }
 
         public void setItem(recomand item){
