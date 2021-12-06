@@ -37,7 +37,7 @@ public class main3_music extends Fragment {
         cardview1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getActivity(),ListActivity.class);
+                Intent intent = new Intent(getActivity(),Content_RecyclerList.class);
                 startActivity(intent);
             }
         });
@@ -46,7 +46,7 @@ public class main3_music extends Fragment {
         cardview2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getActivity(),ListActivity.class);
+                Intent intent = new Intent(getActivity(),Content_RecyclerList.class);
                 startActivity(intent);
             }
         });
@@ -54,7 +54,7 @@ public class main3_music extends Fragment {
         cardview3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getActivity(),ListActivity.class);
+                Intent intent = new Intent(getActivity(),Content_RecyclerList.class);
                 startActivity(intent);
             }
         });
@@ -62,7 +62,7 @@ public class main3_music extends Fragment {
         cardview4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getActivity(),ListActivity.class);
+                Intent intent = new Intent(getActivity(),Content_RecyclerList.class);
                 startActivity(intent);
             }
         });
@@ -70,7 +70,7 @@ public class main3_music extends Fragment {
         cardview5.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getActivity(),ListActivity.class);
+                Intent intent = new Intent(getActivity(),Content_RecyclerList.class);
                 startActivity(intent);
             }
         });

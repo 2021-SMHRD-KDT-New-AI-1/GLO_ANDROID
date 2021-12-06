@@ -39,7 +39,7 @@ public class ListActivity extends AppCompatActivity {
 
     RequestQueue requestQueue;
     String url;
-    List<DataVo> data;
+
     private Object DataVo;
 
     @Override
@@ -50,7 +50,7 @@ public class ListActivity extends AppCompatActivity {
 
         MyAdapter adapter = new MyAdapter();
         mListView.setAdapter(adapter);
-        DataVo = data;
+
         String url = "";
 
         if (requestQueue == null) {
@@ -70,13 +70,9 @@ public class ListActivity extends AppCompatActivity {
                                 JSONObject data1 = (JSONObject) list.get(i);
 
                                 String title = data1.getString("title");
-                                String content = data1.getString("content");
-                                String word = data1.getString("word");
-                                String mean = data1.getString("mean");
+                                String content = data1.getString("url");
 
-                                DataVo vo = new DataVo(title, word, content, mean);
 
-                                data.add(vo);
 
                             }
 
