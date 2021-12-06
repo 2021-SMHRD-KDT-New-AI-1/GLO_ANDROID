@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 
@@ -21,18 +22,19 @@ import org.json.JSONObject;
 public class Content_RecyclerList extends AppCompatActivity {
 
     RequestQueue requestQueue;
-    String url;
+    String url,name;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_content_recycler_list);
-        String url =  "http://172.30.1.26:3002/recommend_a";
+        String url =  "http://172.30.1.26:3002/recommend_m_a";
         RecyclerView recyclerView = findViewById(R.id.recyclerview);
 
         LinearLayoutManager layoutManager = new LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false);
         recyclerView.setLayoutManager(layoutManager);
-
+        Intent intent = getIntent();
+        String name= intent.getStringExtra("name");
         ListAdapter adapter = new ListAdapter();
         if (requestQueue == null) {
             requestQueue = Volley.newRequestQueue(getApplicationContext());
@@ -51,13 +53,12 @@ public class Content_RecyclerList extends AppCompatActivity {
                                 JSONObject data1 = (JSONObject) list.get(i);
 
                                 String title = data1.getString("title");
-
                                 String content = data1.getString("url");
                                 String category = data1.getString("category");
                                 int score = data1.getInt("score");
-
                                 adapter.addItem(new recomand(content,title,category,score));
                                 Log.d("asd", title);
+
 
                             }
 

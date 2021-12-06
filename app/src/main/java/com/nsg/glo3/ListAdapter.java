@@ -6,6 +6,7 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
+import androidx.cardview.widget.CardView;
 import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.ArrayList;
@@ -48,15 +49,23 @@ public class ListAdapter extends RecyclerView.Adapter<ListAdapter.ViewHolder> {
 
     static class ViewHolder extends RecyclerView.ViewHolder{
         TextView title_mv;
+        CardView card_list;
 
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
 
             title_mv = itemView.findViewById(R.id.title_mv);
+            card_list = itemView.findViewById(R.id.card_list);
         }
 
         public void setItem(recomand item){
             title_mv.setText(item.getTitle());
+            card_list.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+
+                }
+            });
         }
     }
 

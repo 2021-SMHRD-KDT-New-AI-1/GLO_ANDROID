@@ -38,6 +38,7 @@ public class main3_music extends Fragment {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(getActivity(),Content_RecyclerList.class);
+                intent.putExtra("name", "우울하거나 슬픈음악");
                 startActivity(intent);
             }
         });
@@ -47,6 +48,7 @@ public class main3_music extends Fragment {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(getActivity(),Content_RecyclerList.class);
+                intent.putExtra("name", "신나거나 기분업되는 음악");
                 startActivity(intent);
             }
         });
@@ -55,6 +57,7 @@ public class main3_music extends Fragment {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(getActivity(),Content_RecyclerList.class);
+                intent.putExtra("name", "위로받는 음악");
                 startActivity(intent);
             }
         });
@@ -63,6 +66,7 @@ public class main3_music extends Fragment {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(getActivity(),Content_RecyclerList.class);
+                intent.putExtra("name", "가사없는 노래");
                 startActivity(intent);
             }
         });
@@ -71,6 +75,7 @@ public class main3_music extends Fragment {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(getActivity(),Content_RecyclerList.class);
+                intent.putExtra("name", "긴 플레이리스트");
                 startActivity(intent);
             }
         });

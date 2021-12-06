@@ -44,7 +44,9 @@ public class Login extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
         super.onCreate(savedInstanceState);
+
         setContentView(R.layout.activity_login);
 
         edt_id = findViewById(R.id.edt_id);
@@ -126,7 +128,8 @@ public class Login extends AppCompatActivity {
 
                     }
                 }
-        ) {
+        )
+        {
             @Override
             protected Map<String, String> getParams() throws AuthFailureError {
                 Map<String, String> params = new HashMap<String, String>();
@@ -143,8 +146,10 @@ public class Login extends AppCompatActivity {
             public void onClick(View view) {
                 Log.d("id",edt_id.getText().toString());
                 requestQueue.add(stringRequest);
+
             }
         });
+
 
 //        tvRegister.setOnClickListener(new View.OnClickListener() {
 //            @Override
@@ -153,6 +158,7 @@ public class Login extends AppCompatActivity {
 //                startActivity(intent);
 //            }
 //        });
+
 
     }
     @Override
