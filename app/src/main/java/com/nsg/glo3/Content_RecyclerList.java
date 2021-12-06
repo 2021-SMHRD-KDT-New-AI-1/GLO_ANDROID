@@ -5,6 +5,7 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
+import android.util.Log;
 
 import com.android.volley.Request;
 import com.android.volley.RequestQueue;
@@ -21,7 +22,6 @@ public class Content_RecyclerList extends AppCompatActivity {
 
     RequestQueue requestQueue;
     String url;
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -51,11 +51,13 @@ public class Content_RecyclerList extends AppCompatActivity {
                                 JSONObject data1 = (JSONObject) list.get(i);
 
                                 String title = data1.getString("title");
+
                                 String content = data1.getString("url");
-                                String category = data1.getString("categoty");
+                                String category = data1.getString("category");
                                 int score = data1.getInt("score");
 
                                 adapter.addItem(new recomand(content,title,category,score));
+                                Log.d("asd", title);
 
                             }
 
