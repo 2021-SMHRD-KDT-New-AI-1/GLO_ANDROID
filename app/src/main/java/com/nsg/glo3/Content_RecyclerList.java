@@ -28,13 +28,20 @@ public class Content_RecyclerList extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_content_recycler_list);
-        String url =  "http://172.30.1.26:3002/recommend_m_a";
+        Intent intent = getIntent();
+        String name1= intent.getStringExtra("media");
+
+        if(name1.equals("music")) {
+            url = "http://172.30.1.26:3002/recommend_m_a";
+        }else{
+            url = "http://172.30.1.26:3002/recommend_v_a";
+        }
         RecyclerView recyclerView = findViewById(R.id.recyclerview);
 
         LinearLayoutManager layoutManager = new LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false);
         recyclerView.setLayoutManager(layoutManager);
-        Intent intent = getIntent();
-        String name= intent.getStringExtra("name");
+        Intent intent1 = getIntent();
+        String name= intent1.getStringExtra("name");
         ListAdapter adapter = new ListAdapter();
         if (requestQueue == null) {
             requestQueue = Volley.newRequestQueue(getApplicationContext());
@@ -56,9 +63,10 @@ public class Content_RecyclerList extends AppCompatActivity {
                                 String content = data1.getString("url");
                                 String category = data1.getString("category");
                                 int score = data1.getInt("score");
-                                adapter.addItem(new recomand(content,title,category,score));
-                                Log.d("asd", title);
-
+                                if(name.equals(category) ) {
+                                    adapter.addItem(new recomand(content, title, category, score));
+                                    Log.d("asd", category);
+                                }
 
                             }
 

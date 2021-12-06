@@ -50,7 +50,9 @@ public class main4_media extends Fragment {
         cardview6.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getActivity(),ListActivity.class);
+                Intent intent = new Intent(getActivity(),Content_RecyclerList.class);
+                intent.putExtra("name", "동기부여");
+                intent.putExtra("media", "video");
                 startActivity(intent);
             }
         });
@@ -59,7 +61,9 @@ public class main4_media extends Fragment {
         cardview7.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getActivity(),ListActivity.class);
+                Intent intent = new Intent(getActivity(),Content_RecyclerList.class);
+                intent.putExtra("name", "동물");
+                intent.putExtra("media", "video");
                 startActivity(intent);
             }
         });
@@ -67,7 +71,9 @@ public class main4_media extends Fragment {
         cardview8.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getActivity(),ListActivity.class);
+                Intent intent = new Intent(getActivity(),Content_RecyclerList.class);
+                intent.putExtra("name", "밈");
+                intent.putExtra("media", "video");
                 startActivity(intent);
             }
         });
@@ -75,7 +81,9 @@ public class main4_media extends Fragment {
         cardview9.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getActivity(),ListActivity.class);
+                Intent intent = new Intent(getActivity(),Content_RecyclerList.class);
+                intent.putExtra("name", "웃긴 영상");
+                intent.putExtra("media", "video");
                 startActivity(intent);
             }
         });
@@ -83,7 +91,9 @@ public class main4_media extends Fragment {
         cardview10.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getActivity(),ListActivity.class);
+                Intent intent = new Intent(getActivity(),Content_RecyclerList.class);
+                intent.putExtra("name", "전문가");
+                intent.putExtra("media", "video");
                 startActivity(intent);
             }
         });

@@ -1,5 +1,7 @@
 package com.nsg.glo3;
 
+import android.content.Intent;
+import android.net.Uri;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -64,6 +66,12 @@ public class ListAdapter extends RecyclerView.Adapter<ListAdapter.ViewHolder> {
                 @Override
                 public void onClick(View view) {
 
+                    String find = item.content;
+                    Uri uri = Uri.parse(find);
+                    Intent intent = new Intent(Intent.ACTION_VIEW, uri);
+                    intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+
+                    view.getContext().startActivity(intent);
                 }
             });
         }
