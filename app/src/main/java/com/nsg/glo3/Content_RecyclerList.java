@@ -52,7 +52,7 @@ public class Content_RecyclerList extends AppCompatActivity {
 
                                 String title = data1.getString("title");
                                 String content = data1.getString("url");
-                                String category = data1.getString("categoty");
+                                String category = data1.getString("category");
                                 int score = data1.getInt("score");
 
                                 adapter.addItem(new recomand(content,title,category,score));
