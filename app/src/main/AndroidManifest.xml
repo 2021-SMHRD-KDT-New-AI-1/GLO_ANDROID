@@ -13,6 +13,9 @@
         android:theme="@style/Theme.GLO3"
         android:usesCleartextTraffic="true">
         <activity
+            android:name=".Content_RecyclerList"
+            android:exported="true" />
+        <activity
             android:name=".LoadingActivity"
             android:exported="true">
             <intent-filter>
@@ -20,32 +23,25 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-
-
         </activity>
         <activity
             android:name=".admin_register"
-            android:exported="true"></activity>
+            android:exported="true" />
         <activity
             android:name=".ListActivity"
             android:exported="true" />
         <activity
             android:name=".survey"
-            android:exported="true"></activity>
+            android:exported="true" />
         <activity
             android:name=".user_register"
-            android:exported="true"></activity>
+            android:exported="true" />
         <activity
             android:name=".Login"
-            android:exported="true">
-
-        </activity>
+            android:exported="true"></activity>
         <activity
             android:name=".MainActivity"
-            android:exported="true">
-
-
-        </activity>
+            android:exported="true"></activity>
     </application>
 
 </manifest>

@@ -79,13 +79,15 @@
                     <androidx.constraintlayout.widget.ConstraintLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:background="@drawable/white_btn_background">
+                        android:background="@drawable/white_btn_background"
+                        android:backgroundTint="#00FFFFFF">
 
                         <ImageView
                             android:id="@+id/cate1"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_margin="8dp"
+                            android:elevation="15dp"
                             app:layout_constraintBottom_toBottomOf="parent"
                             app:layout_constraintEnd_toEndOf="parent"
                             app:layout_constraintStart_toStartOf="parent"
@@ -94,14 +96,14 @@
 
                         <ImageView
                             android:id="@+id/cate1_1"
-                            android:layout_width="60dp"
-                            android:layout_height="60dp"
+                            android:layout_width="55dp"
+                            android:layout_height="53dp"
+                            android:elevation="15dp"
                             app:layout_constraintBottom_toBottomOf="@+id/cate1"
                             app:layout_constraintEnd_toEndOf="@+id/cate1"
                             app:layout_constraintStart_toStartOf="@+id/cate1"
                             app:layout_constraintTop_toTopOf="@+id/cate1"
-                            app:srcCompat="@drawable/ic_baseline_chat_24"
-                            />
+                            app:srcCompat="@drawable/ic_baseline_chat_24" />
                     </androidx.constraintlayout.widget.ConstraintLayout>
 
                     <TextView
@@ -124,30 +126,31 @@
                     <androidx.constraintlayout.widget.ConstraintLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:background="@drawable/white_btn_background">
+                        android:background="@drawable/white_btn_background"
+                        android:backgroundTint="#00FFFFFF">
 
                         <ImageView
                             android:id="@+id/cate2"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_margin="8dp"
+                            android:elevation="15dp"
                             app:layout_constraintBottom_toBottomOf="parent"
                             app:layout_constraintEnd_toEndOf="parent"
                             app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintTop_toTopOf="parent"
-                            app:srcCompat="@drawable/circle_green"
-                            />
+                            app:srcCompat="@drawable/circle_green" />
 
                         <ImageView
                             android:id="@+id/cate2_1"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
+                            android:layout_width="61dp"
+                            android:layout_height="62dp"
+                            android:elevation="15dp"
                             app:layout_constraintBottom_toBottomOf="@+id/cate2"
                             app:layout_constraintEnd_toEndOf="@+id/cate2"
                             app:layout_constraintStart_toStartOf="@+id/cate2"
                             app:layout_constraintTop_toTopOf="@+id/cate2"
-                            app:srcCompat="@drawable/btn_2"
-                            />
+                            app:srcCompat="@drawable/btn_2" />
                     </androidx.constraintlayout.widget.ConstraintLayout>
 
                     <TextView
@@ -170,7 +173,8 @@
                     <androidx.constraintlayout.widget.ConstraintLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:background="@drawable/white_btn_background">
+                        android:background="@drawable/white_btn_background"
+                        android:backgroundTint="#00FFFFFF">
 
                         <ImageView
                             android:id="@+id/cate3"
@@ -181,19 +185,17 @@
                             app:layout_constraintEnd_toEndOf="parent"
                             app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintTop_toTopOf="parent"
-                            app:srcCompat="@drawable/circle_green"
-                            />
+                            app:srcCompat="@drawable/circle_green" />
 
                         <ImageView
                             android:id="@+id/cate3_1"
-                            android:layout_width="60dp"
-                            android:layout_height="60dp"
+                            android:layout_width="59dp"
+                            android:layout_height="54dp"
                             app:layout_constraintBottom_toBottomOf="@+id/cate3"
                             app:layout_constraintEnd_toEndOf="@+id/cate3"
                             app:layout_constraintStart_toStartOf="@+id/cate3"
                             app:layout_constraintTop_toTopOf="@+id/cate3"
-                            app:srcCompat="@drawable/ic_baseline_library_music_24"
-                            />
+                            app:srcCompat="@drawable/ic_baseline_library_music_24" />
                     </androidx.constraintlayout.widget.ConstraintLayout>
 
                     <TextView
@@ -222,7 +224,8 @@
                     <androidx.constraintlayout.widget.ConstraintLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:background="@drawable/white_btn_background">
+                        android:background="@drawable/white_btn_background"
+                        android:backgroundTint="#00FFFFFF">
 
                         <ImageView
                             android:id="@+id/cate4"
@@ -233,19 +236,17 @@
                             app:layout_constraintEnd_toEndOf="parent"
                             app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintTop_toTopOf="parent"
-                            app:srcCompat="@drawable/circle_green"
-                            />
+                            app:srcCompat="@drawable/circle_green" />
 
                         <ImageView
                             android:id="@+id/cate4_1"
-                            android:layout_width="60dp"
-                            android:layout_height="60dp"
+                            android:layout_width="55dp"
+                            android:layout_height="55dp"
                             app:layout_constraintBottom_toBottomOf="@+id/cate4"
                             app:layout_constraintEnd_toEndOf="@+id/cate4"
                             app:layout_constraintStart_toStartOf="@+id/cate4"
                             app:layout_constraintTop_toTopOf="@+id/cate4"
-                            app:srcCompat="@drawable/ic_baseline_live_tv_24_white"
-                            />
+                            app:srcCompat="@drawable/ic_baseline_live_tv_24_white" />
                     </androidx.constraintlayout.widget.ConstraintLayout>
 
                     <TextView
@@ -268,7 +269,8 @@
                     <androidx.constraintlayout.widget.ConstraintLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:background="@drawable/white_btn_background">
+                        android:background="@drawable/white_btn_background"
+                        android:backgroundTint="#00FFFFFF">
 
                         <ImageView
                             android:id="@+id/cate5"
@@ -279,19 +281,17 @@
                             app:layout_constraintEnd_toEndOf="parent"
                             app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintTop_toTopOf="parent"
-                            app:srcCompat="@drawable/circle_green"
-                            />
+                            app:srcCompat="@drawable/circle_green" />
 
                         <ImageView
                             android:id="@+id/cate5_1"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
+                            android:layout_width="61dp"
+                            android:layout_height="58dp"
                             app:layout_constraintBottom_toBottomOf="@+id/cate5"
                             app:layout_constraintEnd_toEndOf="@+id/cate5"
                             app:layout_constraintStart_toStartOf="@+id/cate5"
                             app:layout_constraintTop_toTopOf="@+id/cate5"
-                            app:srcCompat="@drawable/btn_5"
-                            />
+                            app:srcCompat="@drawable/btn_5" />
                     </androidx.constraintlayout.widget.ConstraintLayout>
 
                     <TextView
@@ -314,7 +314,8 @@
                     <androidx.constraintlayout.widget.ConstraintLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:background="@drawable/white_btn_background">
+                        android:background="@drawable/white_btn_background"
+                        android:backgroundTint="#00FFFFFF">
 
                         <ImageView
                             android:id="@+id/cate6"
@@ -325,8 +326,7 @@
                             app:layout_constraintEnd_toEndOf="parent"
                             app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintTop_toTopOf="parent"
-                            app:srcCompat="@drawable/circle_green"
-                            />
+                            app:srcCompat="@drawable/circle_green" />
 
                         <ImageView
                             android:id="@+id/cate6_1"
@@ -336,8 +336,7 @@
                             app:layout_constraintEnd_toEndOf="@+id/cate6"
                             app:layout_constraintStart_toStartOf="@+id/cate6"
                             app:layout_constraintTop_toTopOf="@+id/cate6"
-                            app:srcCompat="@drawable/ic_baseline_auto_graph_24"
-                            />
+                            app:srcCompat="@drawable/ic_baseline_auto_graph_24" />
                     </androidx.constraintlayout.widget.ConstraintLayout>
 
                     <TextView

@@ -11,6 +11,20 @@ import android.widget.BaseAdapter;
 import android.widget.ListView;
 import android.widget.TextView;
 
+import com.android.volley.Request;
+import com.android.volley.RequestQueue;
+import com.android.volley.Response;
+import com.android.volley.VolleyError;
+import com.android.volley.toolbox.StringRequest;
+import com.android.volley.toolbox.Volley;
+
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
+
+import java.util.ArrayList;
+import java.util.List;
+
 public class ListActivity extends AppCompatActivity {
 
     private ListView mListView;
@@ -23,6 +37,10 @@ public class ListActivity extends AppCompatActivity {
                      , "url-5", "url-6", "url-7", "url-8", "url-9", "url-10"};
 
 
+    RequestQueue requestQueue;
+    String url;
+    List<DataVo> data;
+    private Object DataVo;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,6 +50,50 @@ public class ListActivity extends AppCompatActivity {
 
         MyAdapter adapter = new MyAdapter();
         mListView.setAdapter(adapter);
+        DataVo = data;
+        String url = "";
+
+        if (requestQueue == null) {
+            requestQueue = Volley.newRequestQueue(getApplicationContext());
+        }
+        StringRequest request = new StringRequest(
+                Request.Method.GET,
+                url,
+                new Response.Listener<String>() {
+                    @Override
+                    public void onResponse(String response) {
+                        try {
+                            JSONArray list = new JSONArray(response);
+
+                            for (int i = 0; i < list.length(); i++) {
+
+                                JSONObject data1 = (JSONObject) list.get(i);
+
+                                String title = data1.getString("title");
+                                String content = data1.getString("content");
+                                String word = data1.getString("word");
+                                String mean = data1.getString("mean");
+
+                                DataVo vo = new DataVo(title, word, content, mean);
+
+                                data.add(vo);
+
+                            }
+
+                        } catch (JSONException e) {
+                            e.printStackTrace();
+                        }
+                        adapter.notifyDataSetChanged();
+                    }
+                },
+                new Response.ErrorListener() {
+                    @Override
+                    public void onErrorResponse(VolleyError error) {
+
+                    }
+                }
+        );
+        requestQueue.add(request);
 
     }
     class MyAdapter extends BaseAdapter{
