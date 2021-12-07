@@ -52,6 +52,7 @@
         android:layout_height="0dp"
         android:layout_marginTop="32dp"
         android:background="@drawable/bottom_background_light_green"
+        android:elevation="15dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -113,8 +114,7 @@
                         android:text="AI_Chat"
                         android:textAlignment="center"
                         android:textColor="#34346E"
-                        android:textSize="18sp"
-                        />
+                        android:textSize="18sp" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -160,8 +160,7 @@
                         android:text="Maps"
                         android:textAlignment="center"
                         android:textColor="#34346E"
-                        android:textSize="18sp"
-                        />
+                        android:textSize="18sp" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -205,8 +204,7 @@
                         android:text="Music_Play"
                         android:textAlignment="center"
                         android:textColor="#34346E"
-                        android:textSize="18sp"
-                        />
+                        android:textSize="18sp" />
                 </LinearLayout>
             </TableRow>
 
@@ -256,8 +254,7 @@
                         android:text="Media_Play"
                         android:textAlignment="center"
                         android:textColor="#34346E"
-                        android:textSize="18sp"
-                        />
+                        android:textSize="18sp" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -301,8 +298,7 @@
                         android:text="Favorite"
                         android:textAlignment="center"
                         android:textColor="#34346E"
-                        android:textSize="18sp"
-                        />
+                        android:textSize="18sp" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -357,12 +353,12 @@
             android:layout_width="320dp"
             android:layout_height="50dp"
             android:layout_marginTop="15dp"
+            android:background="@drawable/green_banner_background"
+            android:fontFamily="@font/applesdgothicneoeb"
+            android:gravity="center_vertical"
+            android:text="     you can access the GLO web page"
             android:textColor="#FFFFFF"
             android:textSize="18dp"
-            android:fontFamily="@font/applesdgothicneoeb"
-            android:text="     you can access the GLO web page"
-            android:gravity="center_vertical"
-            android:background="@drawable/green_banner_background"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.498"
             app:layout_constraintStart_toStartOf="parent"

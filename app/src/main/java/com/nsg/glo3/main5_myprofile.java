@@ -45,17 +45,29 @@ public class main5_myprofile extends Fragment {
     String score,reqDate;
     String id;
     String arr[];
-    SharedPreferences spf_user_info;
+    SharedPreferences spf_user_info, pref1;
     SharedPreferences.Editor editor_user_info;
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.main5_myprofile, container, false);
         chart = view.findViewById(R.id.linechart);
-
+        survey_btn = view.findViewById(R.id.survey_btn);
         spf_user_info = this.getActivity().getSharedPreferences("user_info",0);
         id = spf_user_info.getString("id","2");
         Log.d("checkid",id);
+        pref1 = this.getActivity().getSharedPreferences("isFirst", survey.MODE_PRIVATE);
+        SharedPreferences.Editor editor = pref1.edit();
+        survey_btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                editor.putBoolean("isFirst", true);
+                editor.commit();
+                Intent intent = new Intent(view.getContext(), survey.class);
+                startActivity(intent);
+            }
+        });
+
 
         if (requestQueue == null) {
             requestQueue = Volley.newRequestQueue(getContext());
@@ -158,5 +170,6 @@ public class main5_myprofile extends Fragment {
         // set data
         chart.setData(data);
         return view;
+
     }
 }
