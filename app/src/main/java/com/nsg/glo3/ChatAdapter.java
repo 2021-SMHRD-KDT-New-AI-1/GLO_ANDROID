@@ -100,8 +100,8 @@ public class ChatAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
 
         public RightViewHolder(@NonNull View itemView) {
             super(itemView);
-            textv_msg = (TextView)itemView.findViewById(R.id.textv_msg);
-            textv_time = (TextView)itemView.findViewById(R.id.textv_time);
+            textv_msg = itemView.findViewById(R.id.textv_msg);
+            textv_time = itemView.findViewById(R.id.textv_time);
         }
     }
 
