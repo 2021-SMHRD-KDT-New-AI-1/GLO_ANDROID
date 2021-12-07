@@ -45,14 +45,14 @@
         app:layout_constraintTop_toBottomOf="@+id/rcChat"
         app:layout_constraintVertical_bias="0.0" />
 
-    <ImageButton
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/imageButton"
         style="@style/Widget.AppCompat.ImageButton"
         android:layout_width="80dp"
         android:layout_height="50dp"
-        android:background="#00FFFFFF"
+        android:background="@drawable/edittext_background"
+        android:text="전송"
         android:elevation="15dp"
-        android:src="@drawable/green_banner_background"
         app:layout_constraintBottom_toBottomOf="@+id/edit_send"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/edit_send"
