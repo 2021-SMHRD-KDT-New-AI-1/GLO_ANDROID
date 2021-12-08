@@ -28,9 +28,6 @@
             android:name=".admin_register"
             android:exported="true" />
         <activity
-            android:name=".ListActivity"
-            android:exported="true" />
-        <activity
             android:name=".survey"
             android:exported="true" />
         <activity
