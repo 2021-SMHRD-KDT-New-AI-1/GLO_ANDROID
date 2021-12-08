@@ -53,7 +53,7 @@ public class MainActivity extends AppCompatActivity {
         bottomNavigation.add(new MeowBottomNavigation.Model(2, R.drawable.ic_baseline_chat_24));
         bottomNavigation.add(new MeowBottomNavigation.Model(3, R.drawable.ic_baseline_queue_music_24));
         bottomNavigation.add(new MeowBottomNavigation.Model(4, R.drawable.ic_baseline_live_tv_24));
-        bottomNavigation.add(new MeowBottomNavigation.Model(5, R.drawable.ic_baseline_auto_graph_24));
+        bottomNavigation.add(new MeowBottomNavigation.Model(5, R.drawable.ic_baseline_person_24));
 
 
         bottomNavigation.setOnShowListener(new MeowBottomNavigation.ShowListener() {
