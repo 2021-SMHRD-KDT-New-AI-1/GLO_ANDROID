@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#1DB7AE"
+    android:background="#19A2A3"
     tools:context=".MainActivity" >
 
 
@@ -384,11 +384,11 @@
         android:layout_height="wrap_content"
         android:id="@+id/nav_view"
         app:mbn_circleColor="@color/white"
-        app:mbn_selectedIconColor="#1DB7AE"
+        app:mbn_selectedIconColor="#19A2A3"
         app:mbn_countTextColor="@color/white"
         app:mbn_countBackgroundColor="#ff6f00"
         app:mbn_defaultIconColor="@color/white"
-        app:mbn_backgroundBottomColor="#1DB7AE"
+        app:mbn_backgroundBottomColor="#19A2A3"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"

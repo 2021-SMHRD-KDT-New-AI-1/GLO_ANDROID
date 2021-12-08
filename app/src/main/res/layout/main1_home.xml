@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_marginTop="60dp"
-    android:background="#1DB7AE"
+    android:background="#19A2A3"
     tools:context=".MainActivity" >
 
 

@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_gravity="center"
-    android:background="#A0C0C1"
+    android:background="#CADFDD"
     android:focusableInTouchMode="true"
     tools:context=".MainActivity">
 
@@ -48,7 +48,7 @@
                 android:gravity="center_horizontal"
                 android:lineSpacingExtra="10sp"
                 android:text="Create an Account"
-                android:textColor="#FF006365"
+                android:textColor="#19A2A3"
                 android:textSize="20sp"
                 android:textStyle="bold" />
 

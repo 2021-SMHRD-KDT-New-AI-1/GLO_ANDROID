@@ -14,7 +14,7 @@
         android:layout_marginBottom="70dp"
         android:fontFamily="@font/applesdgothicneoeb"
         android:text="Welcome GLO ;"
-        android:textColor="#009688"
+        android:textColor="#19A2A3"
         android:textSize="34sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"

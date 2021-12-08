@@ -23,7 +23,7 @@
         android:lineSpacingExtra="10sp"
         android:text="Your emotion graph"
         android:layout_marginLeft="20dp"
-        android:textColor="#FF006365"
+        android:textColor="#004648"
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/relativeLayout"

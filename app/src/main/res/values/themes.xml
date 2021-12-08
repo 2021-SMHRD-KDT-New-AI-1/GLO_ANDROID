@@ -2,8 +2,8 @@
     <!-- Base application theme. -->
     <style name="Theme.GLO3" parent="Theme.MaterialComponents.DayNight.NoActionBar">
         <!-- Primary brand color. -->
-        <item name="colorPrimary">#0D6E6A</item>
-        <item name="colorPrimaryVariant">#0D6E6A</item>
+        <item name="colorPrimary">#19A2A3</item>
+        <item name="colorPrimaryVariant">#19A2A3</item>
         <item name="colorOnPrimary">@color/white</item>
         <!-- Secondary brand color. -->
         <item name="colorSecondary">@color/teal_200</item>
