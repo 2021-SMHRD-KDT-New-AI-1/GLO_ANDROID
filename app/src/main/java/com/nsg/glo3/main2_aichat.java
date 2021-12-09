@@ -19,6 +19,7 @@ public class main2_aichat extends Fragment {
     private ChatAdapter chatAdapter;
     private RecyclerView.LayoutManager mLayoutManager;
     private ArrayList dataList;
+    String url;
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
@@ -32,6 +33,8 @@ public class main2_aichat extends Fragment {
 
         chatAdapter = new ChatAdapter(dataList);
         recyclerView.setAdapter(chatAdapter);
+        url ="http://127.0.0.1:5000/query/TEST?query=";
+
 
 
 
