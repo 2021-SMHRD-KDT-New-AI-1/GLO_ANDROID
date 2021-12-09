@@ -8,11 +8,11 @@
 
 
     <ImageView
-        android:layout_width="390dp"
+        android:layout_width="300dp"
         android:layout_height="300dp"
-        android:layout_marginLeft="5dp"
+        android:layout_marginLeft="10dp"
         android:layout_marginTop="50dp"
-        android:src="@drawable/image" />
+        android:src="@drawable/glogin" />
 
 
     <RelativeLayout
@@ -132,8 +132,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@+id/cv"
-            android:layout_marginLeft="30dp"
-            android:layout_marginTop="24dp"
+            android:layout_marginLeft="90dp"
+            android:layout_marginTop="30dp"
             android:background="@drawable/btn_white_left"
             android:fontFamily="@font/applesdgothicneoh"
             android:text="user Register"
@@ -145,9 +145,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@+id/cv"
-            android:layout_marginLeft="150dp"
+            android:layout_marginLeft="210dp"
 
-            android:layout_marginTop="24dp"
+            android:layout_marginTop="30dp"
 
             android:background="@drawable/btn_white_right"
             android:fontFamily="@font/applesdgothicneoh"
