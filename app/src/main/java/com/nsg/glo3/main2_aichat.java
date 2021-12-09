@@ -9,6 +9,7 @@ import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -46,32 +47,18 @@ public class main2_aichat extends Fragment {
         edit_send = view.findViewById(R.id.edit_send);
         chatAdapter = new ChatAdapter(dataList);
         recyclerView.setAdapter(chatAdapter);
+
         if(requestQueue == null){
-            requestQueue = Volley.newRequestQueue(getContext());
+            requestQueue = Volley.newRequestQueue(getActivity().getApplicationContext());
         }
+
         btn_send.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                url ="http://127.0.0.1:5000/query/TEST?query=";
-                url += edit_send.getText();
+                dataList.add(new ChatData("사용자",String.valueOf(edit_send.getText()), 2));
 
-                final StringRequest stringRequest = new StringRequest(
-                        Request.Method.GET,
-                        url,
-                        new Response.Listener<String>() {
-                            @Override
-                            public void onResponse(String response) {
-                                dataList.add(new ChatData("","고성욱님 입장", 1));
-                            }
-                        },
-                        new Response.ErrorListener() {
-                            @Override
-                            public void onErrorResponse(VolleyError error) {
-
-                            }
-                        }
-                );
-                requestQueue.add(stringRequest);
+                initDataset();
+                recyclerView.setAdapter(chatAdapter);
             }
         });
 
@@ -86,15 +73,36 @@ public class main2_aichat extends Fragment {
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         dataList = new ArrayList<ChatData>();
-        initDataset();
-
-    }
-
-    private void initDataset() {
 
         dataList.add(new ChatData("","고성욱님 입장", 0));
         dataList.add(new ChatData("","GLO 님 입장", 0));
 
+    }
+
+    private void initDataset() {
+        Log.d("ass","ddsd");
+        url ="http://127.0.0.1:5000/query/TEST?query=";
+        url += String.valueOf(edit_send.getText());
+
+       final StringRequest stringRequest = new StringRequest(
+                Request.Method.GET,
+                url,
+                new Response.Listener<String>() {
+                    @Override
+                    public void onResponse(String response) {
+                        dataList.add(new ChatData("GLO",String.valueOf(response), 1));
+                        Log.d("ass","성공");
+
+                    }
+                },
+                new Response.ErrorListener() {
+                    @Override
+                    public void onErrorResponse(VolleyError error) {
+                        Log.d("ass", String.valueOf(error));
+                    }
+                }
+        );
+        requestQueue.add(stringRequest);
 
 
     }

@@ -1,5 +1,7 @@
 package com.nsg.glo3;
 
+import android.text.Editable;
+
 public class ChatData {
     private String name;
     private String senetence;
@@ -10,6 +12,7 @@ public class ChatData {
         this.senetence = senetence;
         this.viewtype = viewtype;
     }
+
 
     public String getName() {
         return name;
