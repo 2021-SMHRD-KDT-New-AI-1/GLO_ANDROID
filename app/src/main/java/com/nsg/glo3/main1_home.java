@@ -14,13 +14,13 @@ import android.widget.TextView;
 public class main1_home extends Fragment {
 
     TextView textView1,textView2;
-    String[] weeks = {"평온한 하루 보내시길 바래요",
+    String[] weeks = {"당신은 멋진 사람입니다",
             "지치지 않고 잘 이겨내봅시다",
             "건강, 체력 관리 철저히 합시다",
             "함께 웃는 그 날이 오기를 바래요",
             "보고싶은 친구에게 연락 먼저 어떨까요?",
             "마스크로 답답하지만 마음만은 상쾌하게",
-            "추운 겨울 감기 조심 합시다"};
+            "당신은 도움을 받을 자격이 있습니다"};
     String id;
     SharedPreferences spf_user_info;
 
@@ -37,7 +37,7 @@ public class main1_home extends Fragment {
         id = spf_user_info.getString("id","user");
         int randomNum = (int)(Math.random() * weeks.length);
 
-        textView1.setText("hello, "+ id + " 님!"); //  출력
+        textView1.setText("hello, "+ id + " 님"); //  출력
         textView2.setText(weeks[randomNum]);
 
 
