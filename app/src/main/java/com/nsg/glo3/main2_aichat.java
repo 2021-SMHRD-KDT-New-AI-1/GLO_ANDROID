@@ -56,6 +56,7 @@ public class main2_aichat extends Fragment {
         mLayoutManager = new LinearLayoutManager(getActivity());
         recyclerView.setLayoutManager(mLayoutManager);
         recyclerView.scrollToPosition(0);
+        // asdfggh
         edit_send = view.findViewById(R.id.edit_send);
         chatAdapter = new ChatAdapter(dataList);
 
