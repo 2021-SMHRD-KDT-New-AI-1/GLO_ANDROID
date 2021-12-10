@@ -17,7 +17,7 @@
             android:layout_width="35dp"
             android:layout_height="35dp"
             android:layout_gravity="top"
-            android:src="@drawable/profile_green"
+            android:src="@mipmap/ic_launcher"
             />
 
         <LinearLayout
@@ -47,7 +47,9 @@
                 android:id="@+id/textv_msg"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:background="#ffffff"
+                android:background="#00000000"
+                android:foreground="@drawable/aichat_button"
+                android:foregroundTint="#5516A2A3"
                 android:maxLength="150"
                 android:maxLines="15"
                 android:padding="10dp"

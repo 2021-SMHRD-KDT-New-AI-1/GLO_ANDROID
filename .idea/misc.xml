@@ -68,13 +68,11 @@
         <entry key="..\:/Users/SM210706/Desktop/AndroidStudy/GLO3_1/app/src/main/res/layout/test.xml" value="0.36614583333333334" />
         <entry key="..\:/Users/SM210706/Desktop/AndroidStudy/GLO3_1/app/src/main/res/menu/my_menu.xml" value="0.36614583333333334" />
         <entry key="..\:/Users/SM210706/Desktop/AndroidStudy/GLO_ANDROID/app/src/main/res/drawable-v24/bottom_background_light_green.xml" value="0.22083333333333333" />
-        <entry key="..\:/Users/SM210706/Desktop/AndroidStudy/GLO_ANDROID/app/src/main/res/drawable/aichat_button.xml" value="0.38229166666666664" />
         <entry key="..\:/Users/SM210706/Desktop/AndroidStudy/GLO_ANDROID/app/src/main/res/drawable/btn_white_left.xml" value="0.38229166666666664" />
         <entry key="..\:/Users/SM210706/Desktop/AndroidStudy/GLO_ANDROID/app/src/main/res/drawable/btn_white_right.xml" value="0.38229166666666664" />
         <entry key="..\:/Users/SM210706/Desktop/AndroidStudy/GLO_ANDROID/app/src/main/res/drawable/button.xml" value="0.38229166666666664" />
         <entry key="..\:/Users/SM210706/Desktop/AndroidStudy/GLO_ANDROID/app/src/main/res/drawable/button_background_blue.xml" value="0.38229166666666664" />
         <entry key="..\:/Users/SM210706/Desktop/AndroidStudy/GLO_ANDROID/app/src/main/res/drawable/button_white.xml" value="0.38229166666666664" />
-        <entry key="..\:/Users/SM210706/Desktop/AndroidStudy/GLO_ANDROID/app/src/main/res/drawable/my_color.xml" value="0.38229166666666664" />
         <entry key="..\:/Users/SM210706/Desktop/AndroidStudy/GLO_ANDROID/app/src/main/res/layout/activity_admin_register.xml" value="0.36614583333333334" />
         <entry key="..\:/Users/SM210706/Desktop/AndroidStudy/GLO_ANDROID/app/src/main/res/layout/activity_list.xml" value="0.36614583333333334" />
         <entry key="..\:/Users/SM210706/Desktop/AndroidStudy/GLO_ANDROID/app/src/main/res/layout/activity_loading.xml" value="0.28396739130434784" />
@@ -84,16 +82,11 @@
         <entry key="..\:/Users/SM210706/Desktop/AndroidStudy/GLO_ANDROID/app/src/main/res/layout/activity_survey.xml" value="0.34103260869565216" />
         <entry key="..\:/Users/SM210706/Desktop/AndroidStudy/GLO_ANDROID/app/src/main/res/layout/activity_user_register.xml" value="0.36614583333333334" />
         <entry key="..\:/Users/SM210706/Desktop/AndroidStudy/GLO_ANDROID/app/src/main/res/layout/card.xml" value="0.36614583333333334" />
-        <entry key="..\:/Users/SM210706/Desktop/AndroidStudy/GLO_ANDROID/app/src/main/res/layout/center_list.xml" value="0.29438405797101447" />
-        <entry key="..\:/Users/SM210706/Desktop/AndroidStudy/GLO_ANDROID/app/src/main/res/layout/chatbot_list.xml" value="0.29438405797101447" />
-        <entry key="..\:/Users/SM210706/Desktop/AndroidStudy/GLO_ANDROID/app/src/main/res/layout/left_list.xml" value="0.20878623188405798" />
         <entry key="..\:/Users/SM210706/Desktop/AndroidStudy/GLO_ANDROID/app/src/main/res/layout/main1_home.xml" value="0.36614583333333334" />
         <entry key="..\:/Users/SM210706/Desktop/AndroidStudy/GLO_ANDROID/app/src/main/res/layout/main2_aichat.xml" value="0.36614583333333334" />
         <entry key="..\:/Users/SM210706/Desktop/AndroidStudy/GLO_ANDROID/app/src/main/res/layout/main3_music.xml" value="0.36614583333333334" />
         <entry key="..\:/Users/SM210706/Desktop/AndroidStudy/GLO_ANDROID/app/src/main/res/layout/main4_media.xml" value="0.36614583333333334" />
         <entry key="..\:/Users/SM210706/Desktop/AndroidStudy/GLO_ANDROID/app/src/main/res/layout/main5_myprofile.xml" value="0.34103260869565216" />
-        <entry key="..\:/Users/SM210706/Desktop/AndroidStudy/GLO_ANDROID/app/src/main/res/layout/recyclermenu.xml" value="0.17806484295845998" />
-        <entry key="..\:/Users/SM210706/Desktop/AndroidStudy/GLO_ANDROID/app/src/main/res/layout/right_list.xml" value="0.29438405797101447" />
         <entry key="..\:/Users/SM210706/Desktop/AndroidStudy/GLO_ANDROID/app/src/main/res/layout/test.xml" value="0.34103260869565216" />
         <entry key="..\:/Users/SM210706/Desktop/AndroidStudy/GLO_ANDROID/app/src/main/res/menu/my_menu.xml" value="0.36614583333333334" />
         <entry key="..\:/Users/SM210706/Desktop/AndroidStudy/GLO_ANDROID4/app/src/main/res/drawable-v24/bottom_background_light_green.xml" value="0.38229166666666664" />
@@ -135,7 +128,20 @@
         <entry key="..\:/Users/SM210706/Desktop/AndroidStudy/GLO_ANDROID5/app/src/main/res/layout/main2_aichat.xml" value="0.19021739130434784" />
         <entry key="..\:/Users/SM210706/Desktop/AndroidStudy/GLO_ANDROID5/app/src/main/res/menu/my_menu.xml" value="0.35" />
         <entry key="..\:/Users/SM210707/StudioProjects/GLO_ANDROID/app/src/main/res/drawable-v24/bottom_background_light_green.xml" value="0.35625" />
+        <entry key="..\:/Users/SM210707/StudioProjects/GLO_ANDROID/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.3296875" />
+        <entry key="..\:/Users/SM210707/StudioProjects/GLO_ANDROID/app/src/main/res/drawable-v24/white_btn_background.xml" value="0.3296875" />
+        <entry key="..\:/Users/SM210707/StudioProjects/GLO_ANDROID/app/src/main/res/drawable/aichat_button.xml" value="0.3296875" />
         <entry key="..\:/Users/SM210707/StudioProjects/GLO_ANDROID/app/src/main/res/drawable/btn_login1.xml" value="0.35625" />
+        <entry key="..\:/Users/SM210707/StudioProjects/GLO_ANDROID/app/src/main/res/drawable/btn_white_left.xml" value="0.3296875" />
+        <entry key="..\:/Users/SM210707/StudioProjects/GLO_ANDROID/app/src/main/res/drawable/btn_white_right.xml" value="0.3296875" />
+        <entry key="..\:/Users/SM210707/StudioProjects/GLO_ANDROID/app/src/main/res/drawable/button.xml" value="0.3296875" />
+        <entry key="..\:/Users/SM210707/StudioProjects/GLO_ANDROID/app/src/main/res/drawable/button_background_blue.xml" value="0.3296875" />
+        <entry key="..\:/Users/SM210707/StudioProjects/GLO_ANDROID/app/src/main/res/drawable/edittext_background.xml" value="0.3296875" />
+        <entry key="..\:/Users/SM210707/StudioProjects/GLO_ANDROID/app/src/main/res/drawable/forget.xml" value="0.3296875" />
+        <entry key="..\:/Users/SM210707/StudioProjects/GLO_ANDROID/app/src/main/res/drawable/ic_baseline_group_24.xml" value="0.3296875" />
+        <entry key="..\:/Users/SM210707/StudioProjects/GLO_ANDROID/app/src/main/res/drawable/ic_baseline_lock_24.xml" value="0.3296875" />
+        <entry key="..\:/Users/SM210707/StudioProjects/GLO_ANDROID/app/src/main/res/drawable/ic_baseline_queue_music_24.xml" value="0.3296875" />
+        <entry key="..\:/Users/SM210707/StudioProjects/GLO_ANDROID/app/src/main/res/drawable/ic_baseline_smartphone_24.xml" value="0.3296875" />
         <entry key="..\:/Users/SM210707/StudioProjects/GLO_ANDROID/app/src/main/res/layout/activity_admin_register.xml" value="0.33469202898550726" />
         <entry key="..\:/Users/SM210707/StudioProjects/GLO_ANDROID/app/src/main/res/layout/activity_content_recycler_list.xml" value="0.32971014492753625" />
         <entry key="..\:/Users/SM210707/StudioProjects/GLO_ANDROID/app/src/main/res/layout/activity_list.xml" value="0.32971014492753625" />
@@ -155,6 +161,7 @@
         <entry key="..\:/Users/SM210707/StudioProjects/GLO_ANDROID/app/src/main/res/layout/recyclermenu.xml" value="0.32971014492753625" />
         <entry key="..\:/Users/SM210707/StudioProjects/GLO_ANDROID/app/src/main/res/layout/right_list.xml" value="0.271286231884058" />
         <entry key="..\:/Users/SM210707/StudioProjects/GLO_ANDROID/app/src/main/res/layout/test.xml" value="0.32971014492753625" />
+        <entry key="..\:/Users/SM210707/StudioProjects/GLO_ANDROID/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.3296875" />
         <entry key="..\:/Users/SM210707/StudioProjects/GLO_ANDROID/app/src/main/res/xml/network_security_config.xml" value="0.16041666666666668" />
         <entry key="..\:/Users/smhrd/Desktop/AndroidStudy/GLO_ANDROID/app/src/main/res/layout/activity_survey.xml" value="0.2028985507246377" />
         <entry key="..\:/Users/smhrd/Desktop/AndroidStudy/GLO_ANDROID/app/src/main/res/layout/card.xml" value="0.10555555555555556" />
