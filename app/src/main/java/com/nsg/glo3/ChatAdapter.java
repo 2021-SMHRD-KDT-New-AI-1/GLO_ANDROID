@@ -10,7 +10,9 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Date;
 
 public class ChatAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
     private ArrayList<ChatData> dataList;
@@ -90,6 +92,7 @@ public class ChatAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
             textv_nicname = itemView.findViewById(R.id.textv_nicname);
             textv_msg = itemView.findViewById(R.id.textv_msg);
             textv_time = itemView.findViewById(R.id.textv_time);
+            textv_time.setText(getTime());
 
         }
     }
@@ -102,7 +105,16 @@ public class ChatAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
             super(itemView);
             textv_msg = itemView.findViewById(R.id.textv_msg);
             textv_time = itemView.findViewById(R.id.textv_time);
+            textv_time.setText(getTime());
         }
     }
+    private String getTime() {
+        long now = System.currentTimeMillis();
+        Date date = new Date(now);
+        SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd hh:mm:ss");
+        String getTime = dateFormat.format(date); return getTime;
+    }
+
+
 
 }

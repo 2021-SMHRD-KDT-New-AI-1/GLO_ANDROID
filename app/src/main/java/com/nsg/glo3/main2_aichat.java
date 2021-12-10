@@ -1,6 +1,7 @@
 package com.nsg.glo3;
 
 
+import android.content.Context;
 import android.os.Bundle;
 
 import androidx.annotation.Nullable;
@@ -13,6 +14,7 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.inputmethod.InputMethodManager;
 import android.widget.Button;
 import android.widget.EditText;
 
@@ -37,6 +39,16 @@ public class main2_aichat extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
+        dataList = new ArrayList<ChatData>();
+
+
+
+        dataList.add(new ChatData("","고성욱님 입장", 0));
+        dataList.add(new ChatData("","GLO 님 입장", 0));
+        dataList.add(new ChatData("GLO","안녕하세요! 성욱님!", 1));
+
+
+
         View view = inflater.inflate(R.layout.main2_aichat, container, false);
         btn_send = view.findViewById(R.id.btn_send);
         recyclerView = view.findViewById(R.id.rcChat);
@@ -46,11 +58,11 @@ public class main2_aichat extends Fragment {
         recyclerView.scrollToPosition(0);
         edit_send = view.findViewById(R.id.edit_send);
         chatAdapter = new ChatAdapter(dataList);
-        recyclerView.setAdapter(chatAdapter);
 
         if(requestQueue == null){
             requestQueue = Volley.newRequestQueue(getActivity().getApplicationContext());
         }
+
 
         btn_send.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -58,7 +70,11 @@ public class main2_aichat extends Fragment {
                 dataList.add(new ChatData("사용자",String.valueOf(edit_send.getText()), 2));
 
                 initDataset();
+                edit_send.setText("");
+
                 recyclerView.setAdapter(chatAdapter);
+
+
             }
         });
 
@@ -72,16 +88,11 @@ public class main2_aichat extends Fragment {
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        dataList = new ArrayList<ChatData>();
-
-        dataList.add(new ChatData("","고성욱님 입장", 0));
-        dataList.add(new ChatData("","GLO 님 입장", 0));
-
     }
 
     private void initDataset() {
         Log.d("ass","ddsd");
-        url ="http://127.0.0.1:5000/query/TEST?query=";
+        url ="http://10.0.2.2:5000/query/TEST?query=";
         url += String.valueOf(edit_send.getText());
 
        final StringRequest stringRequest = new StringRequest(
@@ -91,8 +102,10 @@ public class main2_aichat extends Fragment {
                     @Override
                     public void onResponse(String response) {
                         dataList.add(new ChatData("GLO",String.valueOf(response), 1));
-                        Log.d("ass","성공");
-
+                        Log.d("ass",String.valueOf(response));
+                        //임시추가
+                        chatAdapter = new ChatAdapter(dataList);
+                        recyclerView.setAdapter(chatAdapter);
                     }
                 },
                 new Response.ErrorListener() {
