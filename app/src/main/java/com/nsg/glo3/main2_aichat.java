@@ -40,15 +40,6 @@ public class main2_aichat extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         dataList = new ArrayList<ChatData>();
-
-
-
-        dataList.add(new ChatData("","고성욱님 입장", 0));
-        dataList.add(new ChatData("","GLO 님 입장", 0));
-        dataList.add(new ChatData("GLO","안녕하세요! 성욱님!", 1));
-
-
-
         View view = inflater.inflate(R.layout.main2_aichat, container, false);
         btn_send = view.findViewById(R.id.btn_send);
         recyclerView = view.findViewById(R.id.rcChat);
