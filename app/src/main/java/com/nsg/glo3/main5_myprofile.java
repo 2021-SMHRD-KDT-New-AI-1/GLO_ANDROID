@@ -43,7 +43,8 @@ public class main5_myprofile extends Fragment {
     ArrayList sum2;
     RequestQueue requestQueue;
     String url;
-    String score,reqDate;
+    int score;
+    String reqDate;
     String id;
     String arr[];
     SharedPreferences spf_user_info, pref1;
@@ -59,7 +60,11 @@ public class main5_myprofile extends Fragment {
         Log.d("checkid",id);
         pref1 = this.getActivity().getSharedPreferences("isFirst", survey.MODE_PRIVATE);
         SharedPreferences.Editor editor = pref1.edit();
+
         url =  "http://172.30.1.26:3002/score_a2";
+
+        ArrayList<Entry> values = new ArrayList<>();
+
         survey_btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -70,8 +75,8 @@ public class main5_myprofile extends Fragment {
                 if (requestQueue == null) {
                     requestQueue = Volley.newRequestQueue(getActivity().getApplicationContext());
                 }
-                score = "!!";
-                Log.d("score",score);
+
+                Log.d("score", String.valueOf(score));
                 final StringRequest stringRequest = new StringRequest(
                         Request.Method.POST,
                         url,
@@ -92,13 +97,29 @@ public class main5_myprofile extends Fragment {
                                     for (int i = 0; i < object.length(); i++) {
                                         JSONObject data1 = (JSONObject) object.get(i);
 
-                                        score = data1.getString("score");
+                                        score = data1.getInt("score");
                                         reqDate = data1.getString("reqDate");
 
 
-                                        Log.d("score", score);
+                                        Log.d("score", String.valueOf(score));
                                         Log.d("reqDate", reqDate);
                                     }
+                                    values.add(new Entry(Integer.parseInt(reqDate.substring(8,10)), score));
+                                    LineDataSet set1;
+                                    set1 = new LineDataSet(values, "DataSet 1");
+
+                                    ArrayList<ILineDataSet> dataSets = new ArrayList<>();
+                                    dataSets.add(set1); // add the data sets
+
+                                    // create a data object with the data sets
+                                    LineData data = new LineData(dataSets);
+
+                                    // black lines and points
+                                    set1.setColor(Color.BLACK);
+                                    set1.setCircleColor(Color.BLACK);
+
+                                    // set data
+                                    chart.setData(data);
 
 //                            spf_user_info = getSharedPreferences("user_info", Context.MODE_PRIVATE);
 //                            editor_user_info = spf_user_info.edit();
@@ -136,7 +157,7 @@ public class main5_myprofile extends Fragment {
                     }
                 };
                 requestQueue.add(stringRequest);
-                ArrayList<Entry> values = new ArrayList<>();
+                //ArrayList<Entry> values = new ArrayList<>();
 
 
 
@@ -144,7 +165,8 @@ public class main5_myprofile extends Fragment {
                 for (int i = 0; i < 1; i++) {
 
                     float val = (float) (Math.random() * 10);
-                    values.add(new Entry(i, val));
+                    //values.add(new Entry(i, val));
+                    //x 축 i, y 축 val
 
 
                 }
@@ -153,21 +175,21 @@ public class main5_myprofile extends Fragment {
                 //values.add(new Entry(1,score));
                 //Toast.makeText(getContext(), "dd", Toast.LENGTH_SHORT).show();
 
-                LineDataSet set1;
-                set1 = new LineDataSet(values, "DataSet 1");
-
-                ArrayList<ILineDataSet> dataSets = new ArrayList<>();
-                dataSets.add(set1); // add the data sets
-
-                // create a data object with the data sets
-                LineData data = new LineData(dataSets);
-
-                // black lines and points
-                set1.setColor(Color.BLACK);
-                set1.setCircleColor(Color.BLACK);
-
-                // set data
-                chart.setData(data);
+//                LineDataSet set1;
+//                set1 = new LineDataSet(values, "DataSet 1");
+//
+//                ArrayList<ILineDataSet> dataSets = new ArrayList<>();
+//                dataSets.add(set1); // add the data sets
+//
+//                // create a data object with the data sets
+//                LineData data = new LineData(dataSets);
+//
+//                // black lines and points
+//                set1.setColor(Color.BLACK);
+//                set1.setCircleColor(Color.BLACK);
+//
+//                // set data
+//                chart.setData(data);
 
             }
         });

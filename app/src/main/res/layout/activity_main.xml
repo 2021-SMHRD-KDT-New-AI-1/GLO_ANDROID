@@ -231,8 +231,7 @@
                             app:layout_constraintEnd_toEndOf="parent"
                             app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintTop_toTopOf="parent"
-                            app:srcCompat="@drawable/circle_green"
-                            />
+                            app:srcCompat="@drawable/circle_green" />
 
                         <ImageView
                             android:id="@+id/cate4_1"
@@ -242,8 +241,7 @@
                             app:layout_constraintEnd_toEndOf="@+id/cate4"
                             app:layout_constraintStart_toStartOf="@+id/cate4"
                             app:layout_constraintTop_toTopOf="@+id/cate4"
-                            app:srcCompat="@drawable/ic_baseline_live_tv_24_white"
-                            />
+                            app:srcCompat="@drawable/ic_baseline_live_tv_24_white" />
                     </androidx.constraintlayout.widget.ConstraintLayout>
 
                     <TextView
