@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:layout_marginTop="60dp"
     android:background="#FFFFFF"
-    tools:context=".MainActivity" >
+    tools:context=".MainActivity">
 
 
     <ImageView
@@ -23,12 +23,12 @@
         android:id="@+id/textView1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/applesdgothicneoeb"
         android:text=""
         android:textColor="#004648"
         android:textSize="20sp"
-        android:fontFamily="@font/applesdgothicneoeb"
         android:textStyle="bold"
-        android:layout_marginTop="5dp"
         app:layout_constraintEnd_toEndOf="@+id/imageView"
         app:layout_constraintStart_toStartOf="@+id/imageView"
         app:layout_constraintTop_toBottomOf="@+id/imageView" />
@@ -37,12 +37,12 @@
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Good Morning"
+        android:layout_marginTop="0dp"
         android:fontFamily="@font/applesdgothicneoeb"
-        android:textStyle="bold"
+        android:text="Good Morning"
         android:textColor="#004648"
         android:textSize="18sp"
-        android:layout_marginTop="0dp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="@+id/textView1"
         app:layout_constraintStart_toStartOf="@+id/textView1"
         app:layout_constraintTop_toBottomOf="@+id/textView1" />
@@ -52,318 +52,388 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_marginTop="32dp"
-        android:background="@drawable/bottom_background_light_green"
+        android:background="@drawable/bottom_background_rectangle"
         android:elevation="15dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView2">
 
-        <TableLayout
-            android:id="@+id/tableLayout"
+        <ScrollView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent">
+            android:layout_height="match_parent"
+            android:scrollbars="none">
 
-            <TableRow
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:gravity="center">
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
 
-                <LinearLayout
-                    android:layout_width="match_parent"
+                <ScrollView
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_margin="16dp"
-                    android:orientation="vertical">
+                    android:background="#F7FFFFFF">
 
-                    <androidx.constraintlayout.widget.ConstraintLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:background="@drawable/white_btn_background"
-                        android:backgroundTint="#00FFFFFF">
-
-                        <ImageView
-                            android:id="@+id/cate1"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_margin="8dp"
-                            android:elevation="15dp"
-                            app:layout_constraintBottom_toBottomOf="parent"
-                            app:layout_constraintEnd_toEndOf="parent"
-                            app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintTop_toTopOf="parent"
-                            app:srcCompat="@drawable/circle_green" />
-
-                        <ImageView
-                            android:id="@+id/cate1_1"
-                            android:layout_width="55dp"
-                            android:layout_height="53dp"
-                            android:elevation="15dp"
-                            app:layout_constraintBottom_toBottomOf="@+id/cate1"
-                            app:layout_constraintEnd_toEndOf="@+id/cate1"
-                            app:layout_constraintStart_toStartOf="@+id/cate1"
-                            app:layout_constraintTop_toTopOf="@+id/cate1"
-                            app:srcCompat="@drawable/ic_baseline_chat_24" />
-                    </androidx.constraintlayout.widget.ConstraintLayout>
-
-                    <TextView
-                        android:id="@+id/cate1_2"
+                    <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="AI_Chat"
-                        android:textAlignment="center"
-                        android:textColor="#34346E"
-                        android:textSize="18sp" />
-                </LinearLayout>
+                        android:background="@drawable/bottom_background_light_green"
+                        android:orientation="vertical">
 
-                <LinearLayout
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:padding="20dp">
+
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                tools:ignore="UselessParent">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="15dp"
+                                    android:fontFamily="@font/applesdgothicneoeb"
+                                    android:text="Today Music"
+                                    android:textAllCaps="true"
+                                    android:textColor="#000000"
+                                    android:textSize="25sp"
+                                    android:textStyle="bold" />
+
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentEnd="true"
+                                    android:layout_centerVertical="true"
+                                    android:layout_marginRight="15dp"
+                                    android:fontFamily="@font/applesdgothicneoeb"
+                                    android:text="View All"
+                                    android:textColor="#000000"
+                                    android:textSize="15sp"
+                                    android:textStyle="bold" />
+
+                            </RelativeLayout>
+
+
+                            <androidx.recyclerview.widget.RecyclerView
+                                android:id="@+id/my_recycler"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+
+                            </androidx.recyclerview.widget.RecyclerView>
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </ScrollView>
+
+                <TableLayout
+                    android:id="@+id/tableLayout"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="16dp"
-                    android:orientation="vertical">
+                    android:layout_height="wrap_content">
 
-                    <androidx.constraintlayout.widget.ConstraintLayout
+                    <TableRow
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:background="@drawable/white_btn_background"
-                        android:backgroundTint="#00FFFFFF">
+                        android:gravity="center">
 
-                        <ImageView
-                            android:id="@+id/cate2"
-                            android:layout_width="wrap_content"
+                        <LinearLayout
+                            android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_margin="8dp"
-                            android:elevation="15dp"
-                            app:layout_constraintBottom_toBottomOf="parent"
-                            app:layout_constraintEnd_toEndOf="parent"
-                            app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintTop_toTopOf="parent"
-                            app:srcCompat="@drawable/circle_green" />
+                            android:layout_margin="16dp"
+                            android:orientation="vertical">
 
-                        <ImageView
-                            android:id="@+id/cate2_1"
-                            android:layout_width="61dp"
-                            android:layout_height="62dp"
-                            android:elevation="15dp"
-                            app:layout_constraintBottom_toBottomOf="@+id/cate2"
-                            app:layout_constraintEnd_toEndOf="@+id/cate2"
-                            app:layout_constraintStart_toStartOf="@+id/cate2"
-                            app:layout_constraintTop_toTopOf="@+id/cate2"
-                            app:srcCompat="@drawable/btn_2" />
-                    </androidx.constraintlayout.widget.ConstraintLayout>
+                            <androidx.constraintlayout.widget.ConstraintLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@drawable/white_btn_background"
+                                android:backgroundTint="#00FFFFFF">
 
-                    <TextView
-                        android:id="@+id/cate2_2"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="Maps"
-                        android:textAlignment="center"
-                        android:textColor="#34346E"
-                        android:textSize="18sp" />
-                </LinearLayout>
+                                <ImageView
+                                    android:id="@+id/cate1"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="8dp"
+                                    android:elevation="15dp"
+                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent"
+                                    app:srcCompat="@drawable/circle_green" />
 
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="16dp"
-                    android:orientation="vertical">
+                                <ImageView
+                                    android:id="@+id/cate1_1"
+                                    android:layout_width="55dp"
+                                    android:layout_height="53dp"
+                                    android:elevation="15dp"
+                                    app:layout_constraintBottom_toBottomOf="@+id/cate1"
+                                    app:layout_constraintEnd_toEndOf="@+id/cate1"
+                                    app:layout_constraintStart_toStartOf="@+id/cate1"
+                                    app:layout_constraintTop_toTopOf="@+id/cate1"
+                                    app:srcCompat="@drawable/ic_baseline_chat_24" />
+                            </androidx.constraintlayout.widget.ConstraintLayout>
 
-                    <androidx.constraintlayout.widget.ConstraintLayout
+                            <TextView
+                                android:id="@+id/cate1_2"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="AI_Chat"
+                                android:textAlignment="center"
+                                android:textColor="#34346E"
+                                android:textSize="18sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="16dp"
+                            android:orientation="vertical">
+
+                            <androidx.constraintlayout.widget.ConstraintLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@drawable/white_btn_background"
+                                android:backgroundTint="#00FFFFFF">
+
+                                <ImageView
+                                    android:id="@+id/cate2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="8dp"
+                                    android:elevation="15dp"
+                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent"
+                                    app:srcCompat="@drawable/circle_green" />
+
+                                <ImageView
+                                    android:id="@+id/cate2_1"
+                                    android:layout_width="61dp"
+                                    android:layout_height="62dp"
+                                    android:elevation="15dp"
+                                    app:layout_constraintBottom_toBottomOf="@+id/cate2"
+                                    app:layout_constraintEnd_toEndOf="@+id/cate2"
+                                    app:layout_constraintStart_toStartOf="@+id/cate2"
+                                    app:layout_constraintTop_toTopOf="@+id/cate2"
+                                    app:srcCompat="@drawable/btn_2" />
+                            </androidx.constraintlayout.widget.ConstraintLayout>
+
+                            <TextView
+                                android:id="@+id/cate2_2"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Maps"
+                                android:textAlignment="center"
+                                android:textColor="#34346E"
+                                android:textSize="18sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="16dp"
+                            android:orientation="vertical">
+
+                            <androidx.constraintlayout.widget.ConstraintLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@drawable/white_btn_background"
+                                android:backgroundTint="#00FFFFFF">
+
+                                <ImageView
+                                    android:id="@+id/cate3"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="8dp"
+                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent"
+                                    app:srcCompat="@drawable/circle_green" />
+
+                                <ImageView
+                                    android:id="@+id/cate3_1"
+                                    android:layout_width="59dp"
+                                    android:layout_height="54dp"
+                                    app:layout_constraintBottom_toBottomOf="@+id/cate3"
+                                    app:layout_constraintEnd_toEndOf="@+id/cate3"
+                                    app:layout_constraintStart_toStartOf="@+id/cate3"
+                                    app:layout_constraintTop_toTopOf="@+id/cate3"
+                                    app:srcCompat="@drawable/ic_baseline_library_music_24" />
+                            </androidx.constraintlayout.widget.ConstraintLayout>
+
+                            <TextView
+                                android:id="@+id/cate3_3"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Music_Play"
+                                android:textAlignment="center"
+                                android:textColor="#34346E"
+                                android:textSize="18sp" />
+                        </LinearLayout>
+                    </TableRow>
+
+                    <TableRow
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:background="@drawable/white_btn_background"
-                        android:backgroundTint="#00FFFFFF">
+                        android:gravity="center">
 
-                        <ImageView
-                            android:id="@+id/cate3"
-                            android:layout_width="wrap_content"
+                        <LinearLayout
+                            android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_margin="8dp"
-                            app:layout_constraintBottom_toBottomOf="parent"
-                            app:layout_constraintEnd_toEndOf="parent"
-                            app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintTop_toTopOf="parent"
-                            app:srcCompat="@drawable/circle_green" />
+                            android:layout_margin="16dp"
+                            android:orientation="vertical">
 
-                        <ImageView
-                            android:id="@+id/cate3_1"
-                            android:layout_width="59dp"
-                            android:layout_height="54dp"
-                            app:layout_constraintBottom_toBottomOf="@+id/cate3"
-                            app:layout_constraintEnd_toEndOf="@+id/cate3"
-                            app:layout_constraintStart_toStartOf="@+id/cate3"
-                            app:layout_constraintTop_toTopOf="@+id/cate3"
-                            app:srcCompat="@drawable/ic_baseline_library_music_24" />
-                    </androidx.constraintlayout.widget.ConstraintLayout>
+                            <androidx.constraintlayout.widget.ConstraintLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@drawable/white_btn_background"
+                                android:backgroundTint="#00FFFFFF">
 
-                    <TextView
-                        android:id="@+id/cate3_3"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="Music_Play"
-                        android:textAlignment="center"
-                        android:textColor="#34346E"
-                        android:textSize="18sp" />
-                </LinearLayout>
-            </TableRow>
+                                <ImageView
+                                    android:id="@+id/cate4"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="8dp"
+                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent"
+                                    app:srcCompat="@drawable/circle_green" />
 
-            <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:gravity="center">
+                                <ImageView
+                                    android:id="@+id/cate4_1"
+                                    android:layout_width="55dp"
+                                    android:layout_height="55dp"
+                                    app:layout_constraintBottom_toBottomOf="@+id/cate4"
+                                    app:layout_constraintEnd_toEndOf="@+id/cate4"
+                                    app:layout_constraintStart_toStartOf="@+id/cate4"
+                                    app:layout_constraintTop_toTopOf="@+id/cate4"
+                                    app:srcCompat="@drawable/ic_baseline_live_tv_24_white" />
+                            </androidx.constraintlayout.widget.ConstraintLayout>
 
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="16dp"
-                    android:orientation="vertical">
+                            <TextView
+                                android:id="@+id/cate4_4"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Media_Play"
+                                android:textAlignment="center"
+                                android:textColor="#34346E"
+                                android:textSize="18sp" />
+                        </LinearLayout>
 
-                    <androidx.constraintlayout.widget.ConstraintLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:background="@drawable/white_btn_background"
-                        android:backgroundTint="#00FFFFFF">
-
-                        <ImageView
-                            android:id="@+id/cate4"
-                            android:layout_width="wrap_content"
+                        <LinearLayout
+                            android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_margin="8dp"
-                            app:layout_constraintBottom_toBottomOf="parent"
-                            app:layout_constraintEnd_toEndOf="parent"
-                            app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintTop_toTopOf="parent"
-                            app:srcCompat="@drawable/circle_green" />
+                            android:layout_margin="16dp"
+                            android:orientation="vertical">
 
-                        <ImageView
-                            android:id="@+id/cate4_1"
-                            android:layout_width="55dp"
-                            android:layout_height="55dp"
-                            app:layout_constraintBottom_toBottomOf="@+id/cate4"
-                            app:layout_constraintEnd_toEndOf="@+id/cate4"
-                            app:layout_constraintStart_toStartOf="@+id/cate4"
-                            app:layout_constraintTop_toTopOf="@+id/cate4"
-                            app:srcCompat="@drawable/ic_baseline_live_tv_24_white" />
-                    </androidx.constraintlayout.widget.ConstraintLayout>
+                            <androidx.constraintlayout.widget.ConstraintLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@drawable/white_btn_background"
+                                android:backgroundTint="#00FFFFFF">
 
-                    <TextView
-                        android:id="@+id/cate4_4"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="Media_Play"
-                        android:textAlignment="center"
-                        android:textColor="#34346E"
-                        android:textSize="18sp" />
-                </LinearLayout>
+                                <ImageView
+                                    android:id="@+id/cate5"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="8dp"
+                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent"
+                                    app:srcCompat="@drawable/circle_green" />
 
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="16dp"
-                    android:orientation="vertical">
+                                <ImageView
+                                    android:id="@+id/cate5_1"
+                                    android:layout_width="61dp"
+                                    android:layout_height="58dp"
+                                    app:layout_constraintBottom_toBottomOf="@+id/cate5"
+                                    app:layout_constraintEnd_toEndOf="@+id/cate5"
+                                    app:layout_constraintStart_toStartOf="@+id/cate5"
+                                    app:layout_constraintTop_toTopOf="@+id/cate5"
+                                    app:srcCompat="@drawable/btn_5" />
+                            </androidx.constraintlayout.widget.ConstraintLayout>
 
-                    <androidx.constraintlayout.widget.ConstraintLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:background="@drawable/white_btn_background"
-                        android:backgroundTint="#00FFFFFF">
+                            <TextView
+                                android:id="@+id/cate5_2"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Favorite"
+                                android:textAlignment="center"
+                                android:textColor="#34346E"
+                                android:textSize="18sp" />
+                        </LinearLayout>
 
-                        <ImageView
-                            android:id="@+id/cate5"
-                            android:layout_width="wrap_content"
+                        <LinearLayout
+                            android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_margin="8dp"
-                            app:layout_constraintBottom_toBottomOf="parent"
-                            app:layout_constraintEnd_toEndOf="parent"
-                            app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintTop_toTopOf="parent"
-                            app:srcCompat="@drawable/circle_green" />
+                            android:layout_margin="16dp"
+                            android:orientation="vertical">
 
-                        <ImageView
-                            android:id="@+id/cate5_1"
-                            android:layout_width="61dp"
-                            android:layout_height="58dp"
-                            app:layout_constraintBottom_toBottomOf="@+id/cate5"
-                            app:layout_constraintEnd_toEndOf="@+id/cate5"
-                            app:layout_constraintStart_toStartOf="@+id/cate5"
-                            app:layout_constraintTop_toTopOf="@+id/cate5"
-                            app:srcCompat="@drawable/btn_5" />
-                    </androidx.constraintlayout.widget.ConstraintLayout>
+                            <androidx.constraintlayout.widget.ConstraintLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@drawable/white_btn_background"
+                                android:backgroundTint="#00FFFFFF">
 
-                    <TextView
-                        android:id="@+id/cate5_2"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="Favorite"
-                        android:textAlignment="center"
-                        android:textColor="#34346E"
-                        android:textSize="18sp" />
-                </LinearLayout>
+                                <ImageView
+                                    android:id="@+id/cate6"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="8dp"
+                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent"
+                                    app:srcCompat="@drawable/circle_green" />
 
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="16dp"
-                    android:orientation="vertical">
+                                <ImageView
+                                    android:id="@+id/cate6_1"
+                                    android:layout_width="60dp"
+                                    android:layout_height="60dp"
+                                    app:layout_constraintBottom_toBottomOf="@+id/cate6"
+                                    app:layout_constraintEnd_toEndOf="@+id/cate6"
+                                    app:layout_constraintStart_toStartOf="@+id/cate6"
+                                    app:layout_constraintTop_toTopOf="@+id/cate6"
+                                    app:srcCompat="@drawable/ic_baseline_auto_graph_24" />
+                            </androidx.constraintlayout.widget.ConstraintLayout>
 
-                    <androidx.constraintlayout.widget.ConstraintLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:background="@drawable/white_btn_background"
-                        android:backgroundTint="#00FFFFFF">
+                            <TextView
+                                android:id="@+id/cate6_2"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Motion graph"
+                                android:textAlignment="center"
+                                android:textColor="#34346E"
+                                android:textSize="18sp" />
+                        </LinearLayout>
+                    </TableRow>
 
-                        <ImageView
-                            android:id="@+id/cate6"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_margin="8dp"
-                            app:layout_constraintBottom_toBottomOf="parent"
-                            app:layout_constraintEnd_toEndOf="parent"
-                            app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintTop_toTopOf="parent"
-                            app:srcCompat="@drawable/circle_green" />
+                </TableLayout>
 
-                        <ImageView
-                            android:id="@+id/cate6_1"
-                            android:layout_width="60dp"
-                            android:layout_height="60dp"
-                            app:layout_constraintBottom_toBottomOf="@+id/cate6"
-                            app:layout_constraintEnd_toEndOf="@+id/cate6"
-                            app:layout_constraintStart_toStartOf="@+id/cate6"
-                            app:layout_constraintTop_toTopOf="@+id/cate6"
-                            app:srcCompat="@drawable/ic_baseline_auto_graph_24" />
-                    </androidx.constraintlayout.widget.ConstraintLayout>
-
-                    <TextView
-                        android:id="@+id/cate6_2"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="Motion graph"
-                        android:textAlignment="center"
-                        android:textColor="#34346E"
-                        android:textSize="18sp" />
-                </LinearLayout>
-            </TableRow>
-
-        </TableLayout>
-
-        <TextView
-            android:id="@+id/button2"
-            android:layout_width="320dp"
-            android:layout_height="50dp"
-            android:layout_marginTop="15dp"
-            android:background="@drawable/green_banner_background"
-            android:fontFamily="@font/applesdgothicneoeb"
-            android:gravity="center_vertical"
-            android:text="     you can access the GLO web page"
-            android:textColor="#FFFFFF"
-            android:textSize="18dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.498"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/tableLayout" />
+                <TextView
+                    android:id="@+id/button2"
+                    android:layout_width="320dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="45dp"
+                    android:layout_marginTop="25dp"
+                    android:background="@drawable/green_banner_background"
+                    android:fontFamily="@font/applesdgothicneoeb"
+                    android:gravity="center_vertical"
+                    android:text="     you can access the GLO web page"
+                    android:textColor="#FFFFFF"
+                    android:textSize="18dp" />
+            </LinearLayout>
+        </ScrollView>
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
