@@ -24,9 +24,13 @@ import com.android.volley.VolleyError;
 import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
 import com.github.mikephil.charting.charts.LineChart;
+import com.github.mikephil.charting.components.Description;
+import com.github.mikephil.charting.components.Legend;
+import com.github.mikephil.charting.components.XAxis;
 import com.github.mikephil.charting.data.Entry;
 import com.github.mikephil.charting.data.LineData;
 import com.github.mikephil.charting.data.LineDataSet;
+import com.github.mikephil.charting.formatter.IndexAxisValueFormatter;
 import com.github.mikephil.charting.interfaces.datasets.ILineDataSet;
 
 import org.json.JSONArray;
@@ -49,6 +53,28 @@ public class main5_myprofile extends Fragment {
     String arr[];
     SharedPreferences spf_user_info, pref1;
     SharedPreferences.Editor editor_user_info;
+    ArrayList<Entry> values = new ArrayList<>();
+    static ArrayList<String> datelist = new ArrayList<>();
+    static class LineChartXAxisValueFormatter extends IndexAxisValueFormatter {
+
+        @Override
+        public String getFormattedValue(float value) {
+
+            // Convert float value to date string
+            // Convert from days back to milliseconds to format time  to show to the user
+            /*long emissionsMilliSince1970Time = TimeUnit.DAYS.toMillis((long)value);
+            // Show time in local version
+            Date timeMilliseconds = new Date(emissionsMilliSince1970Time);
+            SimpleDateFormat dateTimeFormat = new SimpleDateFormat("MM-dd");*/
+            String d = datelist.get((int)value);
+
+            Log.d("qq",String.valueOf(datelist.size()));
+
+
+            return d.substring(5,10);
+        }
+    }
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
@@ -65,137 +91,124 @@ public class main5_myprofile extends Fragment {
 
         ArrayList<Entry> values = new ArrayList<>();
 
-        survey_btn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
+
 //                editor.putBoolean("isFirst", true);
 //                editor.commit();
 //                Intent intent = new Intent(view.getContext(), survey.class);
 //                startActivity(intent);
-                if (requestQueue == null) {
-                    requestQueue = Volley.newRequestQueue(getActivity().getApplicationContext());
-                }
+        if (requestQueue == null) {
+            requestQueue = Volley.newRequestQueue(getActivity().getApplicationContext());
+        }
 
-                Log.d("score", String.valueOf(score));
-                final StringRequest stringRequest = new StringRequest(
-                        Request.Method.POST,
-                        url,
-                        new Response.Listener<String>() {
-                            @Override
-                            public void onResponse(String response) {
-                                String result = "";
-
-                                try {
-                                    JSONArray object = new JSONArray(response);
-                                    Log.d("asdf", String.valueOf(response));
-                                    // for (int i = 0; i < 7; i++) {
-                                    //    arr[i] = object.getString("score");
-                                    // }
-                                    // Log.d("score2",arr[0]);
-                                    //score = object.getString("score");
-
-                                    for (int i = 0; i < object.length(); i++) {
-                                        JSONObject data1 = (JSONObject) object.get(i);
-
-                                        score = data1.getInt("score");
-                                        reqDate = data1.getString("reqDate");
-
-
-                                        Log.d("score", String.valueOf(score));
-                                        Log.d("reqDate", reqDate);
-                                    }
-                                    values.add(new Entry(Integer.parseInt(reqDate.substring(8,10)), score));
-                                    LineDataSet set1;
-                                    set1 = new LineDataSet(values, "DataSet 1");
-
-                                    ArrayList<ILineDataSet> dataSets = new ArrayList<>();
-                                    dataSets.add(set1); // add the data sets
-
-                                    // create a data object with the data sets
-                                    LineData data = new LineData(dataSets);
-
-                                    // black lines and points
-                                    set1.setColor(Color.BLACK);
-                                    set1.setCircleColor(Color.BLACK);
-
-                                    // set data
-                                    chart.setData(data);
-
-//                            spf_user_info = getSharedPreferences("user_info", Context.MODE_PRIVATE);
-//                            editor_user_info = spf_user_info.edit();
-//                            editor_user_info.putString("id", id);
-//                            editor_user_info.putString("pw", pw);
-
-
-
-                                } catch (JSONException e) {
-                                    e.printStackTrace();
-                                }
-
-
-                            }
-                        },
-                        new Response.ErrorListener() {
-                            @Override
-                            public void onErrorResponse(VolleyError error) {
-                                Log.d("asd", String.valueOf(error));
-
-                            }
-                        }
-                ) {
-
+        Log.d("score", String.valueOf(score));
+        final StringRequest stringRequest = new StringRequest(
+                Request.Method.POST,
+                url,
+                new Response.Listener<String>() {
                     @Override
-                    protected Map<String, String> getParams() throws AuthFailureError {
-                        Map<String, String> params = new HashMap<String, String>();
+                    public void onResponse(String response) {
+                        String result = "";
 
-                        params.put("id",id);
+                        try {
+                            JSONArray object = new JSONArray(response);
+                            Log.d("asdf", String.valueOf(response));
 
-                        Log.d("check",id);
+                            for (int i = 0; i < object.length(); i++) {
+                                JSONObject data1 = (JSONObject) object.get(i);
 
+                                score = data1.getInt("score");
+                                reqDate = data1.getString("reqDate");
+                                datelist.add(reqDate);
 
-                        return params;
-                    }
-                };
-                requestQueue.add(stringRequest);
-                //ArrayList<Entry> values = new ArrayList<>();
+                                Log.d("score", String.valueOf(score));
+                                Log.d("reqDate", reqDate);
+                                values.add(new Entry(i,score));
+                                Log.d("dd",String.valueOf(values));
 
-
-
-
-                for (int i = 0; i < 1; i++) {
-
-                    float val = (float) (Math.random() * 10);
-                    //values.add(new Entry(i, val));
-                    //x 축 i, y 축 val
-
-
-                }
-                //values.add(new Entry(1, Integer.parseInt(score)));
-                //values.add(new Entry(1,Integer.parseInt(arr[0])));
-                //values.add(new Entry(1,score));
-                //Toast.makeText(getContext(), "dd", Toast.LENGTH_SHORT).show();
-
-//                LineDataSet set1;
-//                set1 = new LineDataSet(values, "DataSet 1");
+                            }
+                            // values.add(new Entry(Integer.parseInt(reqDate.substring(8,10)), score));
+                            LineDataSet set1;
+                            set1 = new LineDataSet(values, "DataSet 1");
 //
-//                ArrayList<ILineDataSet> dataSets = new ArrayList<>();
-//                dataSets.add(set1); // add the data sets
+                            ArrayList<ILineDataSet> dataSets = new ArrayList<>();
+                            dataSets.add(set1); // add the data sets
 //
 //                // create a data object with the data sets
-//                LineData data = new LineData(dataSets);
+                            LineData data = new LineData(dataSets);
 //
 //                // black lines and points
-//                set1.setColor(Color.BLACK);
-//                set1.setCircleColor(Color.BLACK);
+                            set1.setColor(Color.BLACK);
+                            set1.setCircleColor(Color.BLACK);
 //
 //                // set data
-//                chart.setData(data);
+                            chart.setData(data);
 
+                            XAxis xAxis = chart.getXAxis();
+                            Legend legend = chart.getLegend();
+                            legend.setEnabled(false);
+                            Description description = chart.getDescription();
+                            description.setEnabled(false);
+
+
+
+
+                            xAxis.setValueFormatter(new LineChartXAxisValueFormatter());
+                            //xAxis.setLabelRotationAngle(-45);
+                            chart.invalidate();
+
+
+
+
+
+
+                        } catch (JSONException e) {
+                            e.printStackTrace();
+                        }
+
+
+                    }
+                },
+                new Response.ErrorListener() {
+                    @Override
+                    public void onErrorResponse(VolleyError error) {
+                        Log.d("asd", String.valueOf(error));
+
+                    }
+                }
+        ) {
+
+            @Override
+            protected Map<String, String> getParams() throws AuthFailureError {
+                Map<String, String> params = new HashMap<String, String>();
+
+                params.put("id",id);
+
+                Log.d("check",id);
+
+
+                return params;
             }
-        });
+        };
+        Log.d("zz",String.valueOf(values));
+        requestQueue.add(stringRequest);
+        //ArrayList<Entry> values = new ArrayList<>();
+
+
+
+        Log.d("score9", String.valueOf(score));
+        // for (int i = 0; i < 1; i++) {
+
+        //     float val = (float) (Math.random() * 10);
+        //     values.add(new Entry(i, val));
+        //x 축 i, y 축 val
+        // }
+
+
+
 
         return view;
 
     }
+
 
 }

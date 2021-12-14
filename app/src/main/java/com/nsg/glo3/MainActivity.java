@@ -1,6 +1,7 @@
 package com.nsg.glo3;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.app.ActivityCompat;
 import androidx.fragment.app.Fragment;
 
 import android.content.SharedPreferences;
@@ -115,4 +116,10 @@ public class MainActivity extends AppCompatActivity {
 
     }
     //123123
+    @Override
+    public void onBackPressed() {
+        ActivityCompat.finishAffinity(this);
+    }
+
+
 }
