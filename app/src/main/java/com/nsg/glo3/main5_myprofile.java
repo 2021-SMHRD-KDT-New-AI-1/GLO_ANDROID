@@ -23,6 +23,7 @@ import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
+import com.github.mikephil.charting.animation.Easing;
 import com.github.mikephil.charting.charts.LineChart;
 import com.github.mikephil.charting.components.Description;
 import com.github.mikephil.charting.components.Legend;
@@ -44,16 +45,15 @@ import java.util.Map;
 public class main5_myprofile extends Fragment {
     private LineChart chart;
     Button survey_btn;
-    ArrayList sum2;
     RequestQueue requestQueue;
     String url;
     int score;
     String reqDate;
     String id;
-    String arr[];
     SharedPreferences spf_user_info, pref1;
     SharedPreferences.Editor editor_user_info;
     ArrayList<Entry> values = new ArrayList<>();
+    private static final String TAG = "profile";
     static ArrayList<String> datelist = new ArrayList<>();
     static class LineChartXAxisValueFormatter extends IndexAxisValueFormatter {
 
@@ -66,11 +66,15 @@ public class main5_myprofile extends Fragment {
             // Show time in local version
             Date timeMilliseconds = new Date(emissionsMilliSince1970Time);
             SimpleDateFormat dateTimeFormat = new SimpleDateFormat("MM-dd");*/
-            String d = datelist.get((int)value);
-
-            Log.d("qq",String.valueOf(datelist.size()));
-
-
+            Log.d("qq", "getFormattedValue: "+value);
+            String d="";
+            if(value<0){
+                d = datelist.get(0);
+            }else if( value>=datelist.size()) {
+                d = datelist.get(datelist.size()-1);
+            }else{
+                d = datelist.get((int) value);
+            }
             return d.substring(5,10);
         }
     }
@@ -137,12 +141,22 @@ public class main5_myprofile extends Fragment {
                             LineData data = new LineData(dataSets);
 //
 //                // black lines and points
-                            set1.setColor(Color.BLACK);
-                            set1.setCircleColor(Color.BLACK);
+
+                            set1.setLineWidth(3);
+                            set1.setColor(Color.parseColor("#19A2A3"));
+                            set1.setDrawCircles(true);
+                            set1.setDrawCircleHole(true);
+
+                            set1.setCircleColor(Color.parseColor("#004648"));
+                            set1.setCircleHoleColor(Color.parseColor("#004648"));
+                            set1.setCircleSize(5f);
+
+                            chart.animateXY(2000,2000);
 //
 //                // set data
+                            chart.setTouchEnabled(false);
                             chart.setData(data);
-
+                            Log.d(TAG, "onResponse: "+data.getEntryCount());
                             XAxis xAxis = chart.getXAxis();
                             Legend legend = chart.getLegend();
                             legend.setEnabled(false);
@@ -153,6 +167,10 @@ public class main5_myprofile extends Fragment {
 
 
                             xAxis.setValueFormatter(new LineChartXAxisValueFormatter());
+                            xAxis.setLabelCount(data.getEntryCount(), true);
+                            if(data.getEntryCount()==1){
+                                xAxis.setCenterAxisLabels(true);
+                            }
                             //xAxis.setLabelRotationAngle(-45);
                             chart.invalidate();
 
@@ -189,13 +207,10 @@ public class main5_myprofile extends Fragment {
                 return params;
             }
         };
+        stringRequest.setTag(TAG);
         Log.d("zz",String.valueOf(values));
         requestQueue.add(stringRequest);
-        //ArrayList<Entry> values = new ArrayList<>();
 
-
-
-        Log.d("score9", String.valueOf(score));
         // for (int i = 0; i < 1; i++) {
 
         //     float val = (float) (Math.random() * 10);
@@ -203,12 +218,15 @@ public class main5_myprofile extends Fragment {
         //x 축 i, y 축 val
         // }
 
-
-
-
         return view;
 
     }
 
-
+    @Override
+    public void onStop() {
+        super.onStop();
+        if (requestQueue != null) {
+            requestQueue.cancelAll(TAG);
+        }
+    }
 }
